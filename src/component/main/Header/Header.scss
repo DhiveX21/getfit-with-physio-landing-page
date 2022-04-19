@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+@mixin breakpoint-sm {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mdx {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-xl {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+$main: #22a8ba;
+$deep: #1b5c79;
+$dark: #1e2434;
+$maingray: #333333;
+
+.header {
+  font-family: "Red Hat Display", sans-serif;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  //   height: 100vh;
+  //   background-color: #e0e0e0;
+  &__desktop {
+    padding: 20px;
+    &__wrapper {
+      background: rgba(251, 251, 251, 0.25);
+      border-radius: 25px;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__logo {
+      picture {
+        width: fit-content;
+        object-fit: cover;
+        img {
+          width: 200px;
+        }
+      }
+    }
+    &__menu {
+      &__list {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 50px;
+        a {
+          text-decoration: none;
+        }
+
+        &__item {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: $main;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

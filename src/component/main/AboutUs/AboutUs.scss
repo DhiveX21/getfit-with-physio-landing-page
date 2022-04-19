@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+@mixin breakpoint-sm {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-md {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mdx {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-xl {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+$main: #22a8ba;
+$deep: #1b5c79;
+$dark: #1e2434;
+$maingray: #333333;
+$graytext: #999999;
+.about-us {
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0px;
+  &__wrapper {
+    background-size: cover;
+  }
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    h2 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 53px;
+      /* identical to box height */
+
+      color: $main;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    &__thumbnail {
+      z-index: 2;
+      background: #e0e0e0;
+      box-shadow: 25px 25px 50px #bebebe, -25px -25px 50px #ffffff;
+      border-radius: 20px;
+      picture {
+        height: 100%;
+        img {
+          border-radius: 20px;
+          height: 350px;
+          width: 350px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__list {
+      background: #e0e0e0;
+      box-shadow: 25px 25px 50px #bebebe, -25px -25px 50px #ffffff;
+      border-radius: 20px;
+      /* width */
+      ::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.493);
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: $main;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: $deep;
+      }
+      &__wrapper {
+        background: #e0e0e0;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        border-radius: 20px;
+        max-height: 350px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      &__item {
+        picture {
+          img {
+            border-radius: 20px;
+            height: 150px;
+          }
+        }
+      }
+    }
+
+    &__detail {
+      &__title {
+        h3 {
+          margin: 5px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 40px;
+          color: $main;
+        }
+      }
+      &__desc {
+        margin-bottom: 10px;
+        max-width: 450px;
+        p {
+          margin: 5px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 28px;
+
+          color: $graytext;
+        }
+      }
+      &__button {
+        button {
+          background-color: $main;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 10px;
+          /* identical to box height */
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

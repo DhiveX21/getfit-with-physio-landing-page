@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.header {
+  font-family: "Red Hat Display", sans-serif;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__desktop {
+  padding: 20px;
+}
+
+.header__desktop__wrapper {
+  background: rgba(251, 251, 251, 0.25);
+  border-radius: 25px;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__desktop__logo picture {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__desktop__logo picture img {
+  width: 200px;
+}
+
+.header__desktop__menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.header__desktop__menu__list a {
+  text-decoration: none;
+}
+
+.header__desktop__menu__list__item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #22a8ba;
+  margin: 0;
+}
+/*# sourceMappingURL=Header.css.map */
