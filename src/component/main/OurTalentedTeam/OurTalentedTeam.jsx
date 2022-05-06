@@ -35,7 +35,7 @@ export default function OurTalentedTeam() {
                     <div className="our-talented-team__content__card__text__title">
                       <h2>Talent Name</h2>
                     </div>
-                    <div className="our-talented-team__contetn__card__text__desc">
+                    <div className="our-talented-team__content__card__text__desc">
                       <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Maxime animi, modi, excepturi eligendi unde, neque

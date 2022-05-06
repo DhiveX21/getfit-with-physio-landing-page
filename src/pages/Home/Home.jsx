@@ -14,7 +14,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./Home.css";
 
-export default function Home() {
+export default function Home(props) {
+  console.log(props);
   return (
     <>
       <Header></Header>

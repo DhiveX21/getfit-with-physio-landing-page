@@ -9,7 +9,6 @@ $dark: #1e2434;
 $maingray: #333333;
 $graytext: #999999;
 .faq {
-  font-family: "Red Hat Display", sans-serif;
   width: 100%;
   padding: 50px 0px;
   background-size: cover;
@@ -59,10 +58,18 @@ $graytext: #999999;
             background-color: $main;
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 12px;
+            line-height: 16px;
 
             color: white;
+            @include media-breakpoint-up(sm) {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            @include media-breakpoint-up(md) {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
         .accordion-body {
@@ -70,8 +77,16 @@ $graytext: #999999;
           background-color: white;
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 12px;
+          line-height: 16px;
+          @include media-breakpoint-up(sm) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @include media-breakpoint-up(md) {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
       }
     }

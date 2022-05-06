@@ -26,7 +26,7 @@ export default function LatestArticle() {
             data-aos="fade-right"
             data-aos-duration="300"
           >
-            <Link>
+            <Link to="/">
               <div className="latest-article__content__wrapper">
                 <div className="latest-article__content__img">
                   <picture>

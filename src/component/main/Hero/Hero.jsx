@@ -82,7 +82,7 @@ export default function Hero() {
           }}
         >
           {dataJson.map((item, key) => (
-            <SwiperSlide>
+            <SwiperSlide key={key}>
               <div className="hero__swiper__item">
                 <div
                   className="hero__swiper__item__wrapper"
@@ -109,7 +109,7 @@ export default function Hero() {
             <div className="swiper-thumbnail">
               <div className="swiper-thumbnail__wrapper">
                 {dataJson.map((item, key) => (
-                  <HandleSlide item={key}></HandleSlide>
+                  <HandleSlide key={key} item={key}></HandleSlide>
                 ))}
               </div>
             </div>

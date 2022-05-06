@@ -30,7 +30,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="600"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
@@ -45,7 +45,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="900"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
@@ -60,7 +60,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="1200"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
@@ -75,7 +75,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="1500"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
@@ -90,7 +90,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="1800"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
@@ -105,7 +105,7 @@ export default function OurClients() {
                       data-aos="fade-right"
                       data-aos-duration="2100"
                     >
-                      <Link>
+                      <Link to="/">
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>

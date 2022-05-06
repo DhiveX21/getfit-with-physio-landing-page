@@ -68,13 +68,14 @@ export default function WhyGetfit() {
                 </div>
                 <div className="why-getfit__content__list">
                   <div className="why-getfit__content__list__wrapper">
-                    {jsonData.map((item) => (
+                    {jsonData.map((item, key) => (
                       <div
                         className="why-getfit__content__list__item"
                         data-aos="fade-left"
                         data-aos-duration="600"
+                        key={key}
                       >
-                        <Link>
+                        <Link to="/">
                           <div
                             className="why-getfit__content__list__item__wrapper"
                             onMouseEnter={(event) => {

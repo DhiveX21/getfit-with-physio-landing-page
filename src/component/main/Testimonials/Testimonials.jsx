@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import useBreakpoints from "../../../_helper/breakpoint";
 import "swiper/css";
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -8,6 +9,7 @@ import "swiper/scss/pagination";
 import "./Testimonials.css";
 
 export default function Testimonials() {
+  const mediaSize = useBreakpoints();
   return (
     <>
       <section
@@ -29,7 +31,13 @@ export default function Testimonials() {
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={0}
-                slidesPerView={3}
+                slidesPerView={
+                  mediaSize === "xs" || mediaSize === "sm"
+                    ? 1
+                    : mediaSize === "md"
+                    ? 2
+                    : 3
+                }
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
@@ -65,10 +73,12 @@ export default function Testimonials() {
                             data-aos-duration="1500"
                           >
                             <h3>
+                              <span>&ldquo;</span>
                               Lorem Ipsum is simply dummy text of the printing
                               and Lorem Ipsum is simply dummy text of the
                               printing and Lorem Ipsum is simply dummy text of
                               the printing and
+                              <span>&rdquo;</span>
                             </h3>
                           </div>
                         </div>

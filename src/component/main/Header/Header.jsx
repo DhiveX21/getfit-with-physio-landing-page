@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  const isSticky = (e) => {
+    const header = document.querySelector(".header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 10
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
+
   return (
     <header>
       <div className="header">

@@ -6,46 +6,22 @@ import "./ListEventsAndWebinarsDetail.css";
 
 const dataService = [
   {
-    serviceId: "1",
-    serviceName: "Penanganan Ibu Hamil",
-    desc: "Penanganan Ibu Hamil dari usia 2 sampai 9 bulan , agar Ibu dan Calon buah hati selalu terjaga kesehatan dan kebugaran nya , berfokus untuk kenyamanan ibu hamil agar hamil terasa santai dan menyenangkan. :)",
+    event_id: "1",
+    event_name: "Penanganan Ibu Hamil",
+    event_desc:
+      "Penanganan Ibu Hamil dari usia 2 sampai 9 bulan , agar Ibu dan Calon buah hati selalu terjaga kesehatan dan kebugaran nya , berfokus untuk kenyamanan ibu hamil agar hamil terasa santai dan menyenangkan. :)",
     image: "/images/servicelist_1.jpeg",
+    event_date: "12-Jun-2022",
+    speaker: "Faizah Abdullah, S.St.Ft., S.Ft., M.Biomed.",
   },
   {
-    serviceId: "2",
-    serviceName: "Penanganan Atlit",
-    desc: "Penanganan Atlit Kebugaran",
-    image: "/images/latestarticle_img.jpg",
-  },
-  {
-    serviceId: "3",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
-  },
-  {
-    serviceId: "4",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicehighlight_bg.jpg",
-  },
-  {
-    serviceId: "5",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/ourservices_slide1.png",
-  },
-  {
-    serviceId: "6",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
-  },
-  {
-    serviceId: "7",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
+    event_id: "2",
+    event_name: "Treatment pasien Auto Immunne",
+    event_desc:
+      "penanganan pasien dengan auto immunne pastilah memerlukan keahlian khusus , selain sifat autoimmune itu sendiri sudah sangat unik kasus seperti ini juga sangat jarang di temukan",
+    image: "/images/autoimmune.jpg",
+    event_date: "12-Jun-2022",
+    speaker: "Faizah Abdullah, S.St.Ft., S.Ft., M.Biomed.",
   },
 ];
 
@@ -66,17 +42,17 @@ export default function ListEventsAndWebinarsDetail() {
       >
         <div ref={highlightRef}>
           <ProductHighlight
-            mainTitle="Service Highlight"
+            mainTitle="Event Highlight"
             title={
-              dataService.find((item) => item.serviceId === activeHighlight)
-                .serviceName
+              dataService.find((item) => item.event_id === activeHighlight)
+                .event_name
             }
             description={
-              dataService.find((item) => item.serviceId === activeHighlight)
-                .desc
+              dataService.find((item) => item.event_id === activeHighlight)
+                .event_desc
             }
             image={
-              dataService.find((item) => item.serviceId === activeHighlight)
+              dataService.find((item) => item.event_id === activeHighlight)
                 .image
             }
             button={() => console.log("awkodawkod")}
@@ -87,11 +63,11 @@ export default function ListEventsAndWebinarsDetail() {
             <CardFullHalfImage
               cardPadding="70px"
               rowsGap="5vw"
-              title={item.serviceName}
+              title={item.event_name}
               image={item.image}
-              desc={item.desc}
+              desc={item.event_date}
               button={() => {
-                setActiveHighlight(item.serviceId);
+                setActiveHighlight(item.event_id);
                 executeScroll();
               }}
             />

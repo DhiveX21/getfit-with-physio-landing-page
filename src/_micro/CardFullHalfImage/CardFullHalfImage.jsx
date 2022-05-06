@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardFullHalfImage.css";
 import styled from "styled-components";
+import useBreakpoints from "../../_helper/breakpoint";
 
 export default function CardFullHalfImage({
   cardPadding = "10px",
@@ -9,6 +10,7 @@ export default function CardFullHalfImage({
   desc = null,
   button = function () {},
 }) {
+  const mediaSize = useBreakpoints();
   const Button = styled.div`
     transition-duration: 0.3s;
 
@@ -16,14 +18,26 @@ export default function CardFullHalfImage({
       background-color: #22a8ba;
       font-style: normal;
       font-weight: 700;
-      font-size: 1rem;
-      line-height: 1rem;
-      padding: 1rem;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px;
       border: none;
       border-radius: 10px;
       /* identical to box height */
 
       color: #ffffff;
+      @media screen and (min-width: 576px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
   `;
   const Title = styled.div`
@@ -33,10 +47,22 @@ export default function CardFullHalfImage({
     h2 {
       font-style: normal;
       font-weight: 900;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 14px;
+      line-height: 20px;
 
-      color: #333;
+      color: #333333;
+      @media screen and (min-width: 576px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
   `;
   const Desc = styled.div`
@@ -46,10 +72,14 @@ export default function CardFullHalfImage({
     p {
       font-style: normal;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
 
       color: #5a5a5a;
+      @media screen and (min-width: 576px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   `;
   const Wrapper = styled.div`
@@ -58,7 +88,7 @@ export default function CardFullHalfImage({
     background-size: 100%;
     background-position: 100% 50%;
     border-radius: 20px;
-    padding: ${cardPadding};
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -66,6 +96,10 @@ export default function CardFullHalfImage({
     height: calc(100vw / 4);
     box-shadow: -10px -10px 15px #ffffff, 10px 10px 15px #bebebe;
     border-radius: 20px;
+
+    @media screen and (min-width: 992px) {
+      padding: 60px 40px;
+    }
   `;
   const Outer = styled.div`
     width: 100%;

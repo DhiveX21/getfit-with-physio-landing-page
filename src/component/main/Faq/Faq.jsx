@@ -21,11 +21,11 @@ export default function Faq() {
               <h2>FAQ</h2>
             </div>
             <div className="faq__content">
-              <div class="accordion accordion-flush" id="accordionFaq">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOneFaq">
+              <div className="accordion accordion-flush" id="accordionFaq">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-headingOneFaq">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapse-faq-1"
@@ -38,11 +38,11 @@ export default function Faq() {
                   </h2>
                   <div
                     id="flush-collapse-faq-1"
-                    class="accordion-collapse collapse show"
+                    className="accordion-collapse collapse show"
                     aria-labelledby="flush-headingOneFaq"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when Lorem Ipsum
@@ -52,10 +52,10 @@ export default function Faq() {
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-collapse-faq-2">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-collapse-faq-2">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseTwo"
@@ -68,11 +68,11 @@ export default function Faq() {
                   </h2>
                   <div
                     id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-collapse-faq-2"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when Lorem Ipsum
@@ -82,10 +82,10 @@ export default function Faq() {
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-collapse-faq-3">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="flush-collapse-faq-3">
                     <button
-                      class="accordion-button collapsed"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseThree"
@@ -98,11 +98,11 @@ export default function Faq() {
                   </h2>
                   <div
                     id="flush-collapseThree"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-collapse-faq-3"
                     data-bs-parent="#accordionFaq"
                   >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industry's
                       standard dummy text ever since the 1500s, when Lorem Ipsum

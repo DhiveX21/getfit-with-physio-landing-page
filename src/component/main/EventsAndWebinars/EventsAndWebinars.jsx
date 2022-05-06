@@ -33,7 +33,7 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="600"
                   >
-                    <Link>
+                    <Link to="/">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
                           <h3>Auto Immune Treatment</h3>
@@ -52,7 +52,7 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="900"
                   >
-                    <Link>
+                    <Link to="/">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
                           <h3>Auto Immune Treatment</h3>
@@ -71,7 +71,7 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="1200"
                   >
-                    <Link>
+                    <Link to="/">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
                           <h3>Auto Immune Treatment</h3>

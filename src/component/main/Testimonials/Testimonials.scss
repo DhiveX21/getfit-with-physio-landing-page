@@ -1,44 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
-
-@mixin breakpoint-sm {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-md {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-mdx {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-lg {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-xl {
-  @media (max-width: 1800px) {
-    @content;
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100vw);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
 
 $main: #22a8ba;
 $deep: #1b5c79;
@@ -46,11 +9,10 @@ $dark: #1e2434;
 $maingray: #333333;
 $graytext: #999999;
 .testimonials {
-  font-family: "Red Hat Display", sans-serif;
   width: 100%;
   padding: 50px 0px;
   background-size: cover;
-  height: 100vh;
+
   overflow: hidden;
   &__wrapper {
   }
@@ -71,23 +33,47 @@ $graytext: #999999;
   }
 
   .swiper-button-prev {
-    left: 10px;
-    top: calc(50% - 20px);
+    z-index: 10;
+    left: 20px;
+    top: 95%;
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+    }
   }
   .swiper-button-next {
-    right: 10px;
-    top: calc(50% - 20px);
+    z-index: 10;
+    right: 20px;
+    top: 95%;
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+    }
   }
   .swiper-wrapper {
     padding: 30px 0px;
   }
+  .testimonials__swiper__item__wrapper {
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    @include media-breakpoint-up(md) {
+      box-shadow: unset;
+    }
+  }
   .swiper-slide-next {
     transition-duration: 0.3s;
     z-index: 10;
-    transform: translateY(-50px);
-    .testimonials__swiper__item__wrapper {
-      box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+
+    @include media-breakpoint-up(lg) {
+      transform: translateY(-50px);
     }
+    .testimonials__swiper__item__wrapper {
+      @include media-breakpoint-up(md) {
+        box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+      }
+    }
+  }
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   &__swiper__item {
@@ -104,6 +90,11 @@ $graytext: #999999;
     }
 
     &__content {
+      background-color: #e0e0e0;
+      border-radius: 20px;
+      @include media-breakpoint-up(md) {
+        background-color: #e0e0e0;
+      }
       height: 100%;
       padding: 25px;
       display: flex;
@@ -113,19 +104,38 @@ $graytext: #999999;
       &__photo {
         picture {
           img {
-            width: 120px;
+            width: 30vw;
+            @include media-breakpoint-up(md) {
+              width: 120px;
+            }
           }
         }
       }
       &__desc {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         h3 {
+          span {
+            // font-size: 25px;
+          }
           font-style: normal;
           font-weight: 600;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 12px;
+          line-height: 25px;
           text-align: center;
 
-          color: $maingray;
+          color: $graytext;
+          @include media-breakpoint-up(md) {
+            font-size: 14px;
+            line-height: 25px;
+          }
+          @include media-breakpoint-up(lg) {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
       }
       &__button {

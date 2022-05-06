@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductHighlight.css";
+import useBreakpoints from "../../_helper/breakpoint";
 
 export default function ProductHighlight({
   mainTitle = "Highlight",
@@ -8,6 +9,7 @@ export default function ProductHighlight({
   description = "Treatment Physiotherapy home visit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo",
   button = null,
 }) {
+  const mediaSize = useBreakpoints();
   return (
     <>
       <section
@@ -31,7 +33,11 @@ export default function ProductHighlight({
                   <div
                     className="product-highlight__content__card__wrapper"
                     style={{
-                      backgroundImage: `linear-gradient(270deg, #E2E2E2 40%, rgba(244, 244, 244, 0) 70%),url('${image}')`,
+                      backgroundImage: `${
+                        mediaSize === "xs" || mediaSize === "sm"
+                          ? "linear-gradient(360deg, rgba(244, 244, 244, 0.8) 100%, rgba(244, 244, 244, 0) 100%)"
+                          : "linear-gradient(270deg, #E2E2E2 40%, rgba(244, 244, 244, 0) 70%)"
+                      } ,url('${image}')`,
                     }}
                   >
                     {/* <div className="product-highlight__content__card__image"></div> */}

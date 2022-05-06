@@ -11,10 +11,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "./AboutUsDetail.css";
 
-export default function AboutUsDetail() {
+export default function AboutUsDetail(props) {
+  console.log(props);
   return (
     <>
-      {/* <Header></Header> */}
+      <Header></Header>
       <Hero></Hero>
       <OurServices></OurServices>
       <OurClients></OurClients>

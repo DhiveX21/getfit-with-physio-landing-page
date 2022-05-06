@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardFullImageTitle.css";
 import styled from "styled-components";
+import useBreakpoints from "../../_helper/breakpoint";
 
 export default function CardFullImageTitle({
   rowsItem = 3,
@@ -10,6 +11,7 @@ export default function CardFullImageTitle({
   image = "",
   button = function () {},
 }) {
+  const mediaSize = useBreakpoints();
   const Button = styled.div`
     transition-duration: 0.3s;
     transform: translateY(50px);
@@ -18,14 +20,26 @@ export default function CardFullImageTitle({
       background-color: #22a8ba;
       font-style: normal;
       font-weight: 700;
-      font-size: 1rem;
-      line-height: 1rem;
-      padding: 1rem;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px;
       border: none;
       border-radius: 10px;
       /* identical to box height */
 
       color: #ffffff;
+      @media screen and (min-width: 576px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
   `;
   const Title = styled.div`
@@ -34,10 +48,22 @@ export default function CardFullImageTitle({
     h2 {
       font-style: normal;
       font-weight: 900;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 14px;
+      line-height: 20px;
 
       color: #ffffff;
+      @media screen and (min-width: 576px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
   `;
   const Wrapper = styled.div`
