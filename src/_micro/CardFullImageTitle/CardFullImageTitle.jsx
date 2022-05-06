@@ -1,7 +1,6 @@
 import React from "react";
 import "./CardFullImageTitle.css";
 import styled from "styled-components";
-import useBreakpoints from "../../_helper/breakpoint";
 
 export default function CardFullImageTitle({
   rowsItem = 3,
@@ -11,7 +10,6 @@ export default function CardFullImageTitle({
   image = "",
   button = function () {},
 }) {
-  const mediaSize = useBreakpoints();
   const Button = styled.div`
     transition-duration: 0.3s;
     transform: translateY(50px);

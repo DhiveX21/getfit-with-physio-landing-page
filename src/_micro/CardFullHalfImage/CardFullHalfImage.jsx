@@ -1,7 +1,6 @@
 import React from "react";
 import "./CardFullHalfImage.css";
 import styled from "styled-components";
-import useBreakpoints from "../../_helper/breakpoint";
 
 export default function CardFullHalfImage({
   cardPadding = "10px",
@@ -10,7 +9,6 @@ export default function CardFullHalfImage({
   desc = null,
   button = function () {},
 }) {
-  const mediaSize = useBreakpoints();
   const Button = styled.div`
     transition-duration: 0.3s;
 
