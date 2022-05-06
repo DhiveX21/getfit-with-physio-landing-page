@@ -80,8 +80,9 @@ export default function ListServiceDetail() {
           />
         </div>
         <div className="d-flex  container extra-container">
-          {dataService.map((item) => (
+          {dataService.map((item, key) => (
             <CardFullImageTitle
+              key={key}
               rowsGap="5vw"
               title={item.serviceName}
               image={item.image}
