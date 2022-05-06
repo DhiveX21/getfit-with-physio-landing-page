@@ -11,7 +11,7 @@ export default function AboutUs() {
           backgroundImage: `url("/images/aboutus_bg.png")`,
         }}
       >
-        <div className="about-us__wrapper">
+        <div className="about-us__wrapper container">
           <div
             className="about-us__title"
             data-aos="fade-left"

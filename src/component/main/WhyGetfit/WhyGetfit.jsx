@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./WhyGetfit.css";
+import { Popper } from "@mui/material";
+
+const jsonData = [
+  {
+    icon: "images/whygetfit_1.png",
+    description: "Banyak promo menarik!!",
+  },
+  {
+    icon: "images/whygetfit_2.png",
+    description: "Banyak promo menarik!!",
+  },
+  {
+    icon: "images/whygetfit_3.png",
+    description: "Banyak promo menarik!!",
+  },
+  {
+    icon: "images/whygetfit_4.png",
+    description: "Banyak promo menarik!!",
+  },
+  {
+    icon: "images/whygetfit_5.png",
+    description: "Banyak promo menarik!!",
+  },
+  {
+    icon: "images/whygetfit_6.png",
+    description: "Banyak promo menarik!!",
+  },
+];
 
 export default function WhyGetfit() {
+  const [popperText, setPopperText] = useState("");
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
   return (
     <>
       <section
@@ -37,96 +68,60 @@ export default function WhyGetfit() {
                 </div>
                 <div className="why-getfit__content__list">
                   <div className="why-getfit__content__list__wrapper">
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="600"
-                    >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_1.png" alt="" />
-                            </picture>
+                    {jsonData.map((item) => (
+                      <div
+                        className="why-getfit__content__list__item"
+                        data-aos="fade-left"
+                        data-aos-duration="600"
+                      >
+                        <Link>
+                          <div
+                            className="why-getfit__content__list__item__wrapper"
+                            onMouseEnter={(event) => {
+                              setAnchorEl(
+                                anchorEl ? null : event.currentTarget
+                              );
+                            }}
+                            onMouseLeave={(event) => {
+                              setAnchorEl(
+                                anchorEl ? null : event.currentTarget
+                              );
+                              setPopperText(item.description);
+                            }}
+                          >
+                            <div className="why-getfit__content__list__item__icon">
+                              <picture>
+                                <img src={item.icon} alt="why getfit" />
+                              </picture>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="900"
+                        </Link>
+                      </div>
+                    ))}
+
+                    <Popper
+                      id={open ? "simple-popper" : undefined}
+                      open={open}
+                      anchorEl={anchorEl}
+                      // innerRef={(node) => (this.popperNode = node)}
+                      placement="left"
+                      modifiers={[{ name: "preventOverflow", enabled: false }]}
                     >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_2.png" alt="" />
-                            </picture>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="1200"
-                    >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_3.png" alt="" />
-                            </picture>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="1500"
-                    >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_4.png" alt="" />
-                            </picture>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="1800"
-                    >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_5.png" alt="" />
-                            </picture>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                    <div
-                      className="why-getfit__content__list__item"
-                      data-aos="fade-left"
-                      data-aos-duration="2100"
-                    >
-                      <Link>
-                        <div className="why-getfit__content__list__item__wrapper">
-                          <div className="why-getfit__content__list__item__icon">
-                            <picture>
-                              <img src="images/whygetfit_6.png" alt="" />
-                            </picture>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
+                      <div
+                        style={{
+                          backgroundcolor: "#333",
+                          color: "white",
+                          backgroundColor: "black",
+                          padding: "5px 10px",
+                          borderRadius: "5px",
+                          fontsize: "13px",
+                          marginRight: "10px",
+                          maxWidth: "400px",
+                        }}
+                      >
+                        {popperText}
+                      </div>
+                    </Popper>
                   </div>
                 </div>
               </div>

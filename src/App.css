@@ -1,14 +1,88 @@
 .swiper-button-prev {
-  padding: 40px 40px;
+  padding: 20px 20px;
   background: #fff;
-  box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5),
-    -20px -20px 60px rgba(255, 255, 255, 0.5);
-  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+          box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+  .swiper-button-prev {
+    padding: 25px 25px;
+    background: #fff;
+    -webkit-box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+            box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-prev {
+    padding: 30px 30px;
+    background: #fff;
+    -webkit-box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+            box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+}
+
+.swiper-button-prev::after {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev::after {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-prev::after {
+    font-size: 25px;
+  }
+}
+
 .swiper-button-next {
-  padding: 40px 40px;
+  padding: 20px 20px;
   background: #fff;
-  box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5),
-    -20px -20px 60px rgba(255, 255, 255, 0.5);
-  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+          box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+  .swiper-button-next {
+    padding: 25px 25px;
+    background: #fff;
+    -webkit-box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+            box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-next {
+    padding: 30px 30px;
+    background: #fff;
+    -webkit-box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+            box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+}
+
+.swiper-button-next::after {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next::after {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-next::after {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

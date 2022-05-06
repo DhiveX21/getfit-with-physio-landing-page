@@ -1,31 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
-@-webkit-keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-@keyframes slideInFromLeft {
-  0% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 .why-getfit {
   font-family: "Red Hat Display", sans-serif;
   width: 100%;
   padding: 50px 0px;
   background-size: cover;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .why-getfit__title {
@@ -42,10 +21,23 @@
 .why-getfit__title h2 {
   font-style: normal;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 53px;
-  /* identical to box height */
+  font-size: 22px;
+  line-height: 22px;
   color: #22a8ba;
+}
+
+@media (min-width: 576px) {
+  .why-getfit__title h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .why-getfit__title h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .why-getfit__content {
@@ -62,17 +54,23 @@
 }
 
 .why-getfit__content__img {
+  display: none;
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .why-getfit__content__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .why-getfit__content__img picture img {
@@ -83,7 +81,7 @@
 }
 
 .why-getfit__content__list {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,24 +90,41 @@
           justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .why-getfit__content__list {
+    width: 50%;
+  }
+}
+
 .why-getfit__content__list__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
   gap: 20px;
 }
 
+@media (min-width: 768px) {
+  .why-getfit__content__list__wrapper {
+    width: 60%;
+  }
+}
+
 .why-getfit__content__list__item {
-  width: calc(40% - 20px);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background: #e2e2e2;
-  -webkit-box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bebebe;
-          box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bebebe;
+  -webkit-box-shadow: -5px -5px 15px #ffffff, 5px 5px 15px #bebebe;
+          box-shadow: -5px -5px 15px #ffffff, 5px 5px 15px #bebebe;
   border-radius: 20px;
 }
 
@@ -117,7 +132,10 @@
   border-radius: 20px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-  padding: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
 }
 
 .why-getfit__content__list__item__wrapper:hover {
@@ -138,6 +156,31 @@
 .why-getfit__content__list__item__icon {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .why-getfit__content__list__item__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .why-getfit__content__list__item__icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .why-getfit__content__list__item__icon picture img {

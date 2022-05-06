@@ -16,7 +16,7 @@ export default function OurServices() {
           backgroundColor: "#E0E0E0",
         }}
       >
-        <div className="our-services__wrapper ">
+        <div className="our-services__wrapper container">
           <div
             className="our-services__title"
             data-aos="fade-left"
@@ -58,12 +58,12 @@ export default function OurServices() {
                           data-aos="fade-left"
                           data-aos-duration="1500"
                         >
-                          <h3>
+                          <p>
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been Lorem
                             Ipsum is simply dummy text of the printing and
                             typesetting
-                          </h3>
+                          </p>
                         </div>
                         <div
                           className="our-services__swiper__item__content__button"
@@ -91,12 +91,12 @@ export default function OurServices() {
                           <h2>Muscle Release</h2>
                         </div>
                         <div className="our-services__swiper__item__content__desc">
-                          <h3>
+                          <p>
                             Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry. Lorem Ipsum has been Lorem
                             Ipsum is simply dummy text of the printing and
                             typesetting
-                          </h3>
+                          </p>
                         </div>
                         <div className="our-services__swiper__item__content__button">
                           <button type="button">See More</button>

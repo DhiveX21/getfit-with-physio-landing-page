@@ -1,34 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
-
-@mixin breakpoint-sm {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-md {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-mdx {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-lg {
-  @media (max-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin breakpoint-xl {
-  @media (max-width: 1800px) {
-    @content;
-  }
-}
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
 
 @keyframes slideInFromLeft {
   0% {
@@ -45,50 +18,201 @@ $deep: #1b5c79;
 $dark: #1e2434;
 $maingray: #333333;
 
+section:nth-of-type(2) {
+  padding-top: 7.5vw;
+  margin-top: -5vw;
+}
+
 .hero {
   font-family: "Red Hat Display", sans-serif;
   width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 5vw;
+
+  .swiper {
+    overflow: visible;
+    .container {
+      @include media-breakpoint-down(md) {
+        max-width: unset;
+        padding: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: 80vw;
+        padding: 0;
+      }
+    }
+  }
+
+  .swiper-thumbnail {
+    position: absolute;
+    bottom: 10px;
+    z-index: 100;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      bottom: -5vw;
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+      }
+    }
+    &__item {
+      button {
+        transition-duration: 0.3s;
+
+        border-radius: 20px;
+        width: fit-content;
+        border: none;
+        padding: 0;
+
+        &::before {
+          transition-duration: 0.3s;
+          border-radius: 20px;
+          content: "";
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        picture {
+          img {
+            width: 20vw;
+            height: 20vw;
+            object-fit: cover;
+            object-position: 100%;
+            border-radius: 20px;
+
+            @include media-breakpoint-up(md) {
+              width: 10vw;
+              height: 10vw;
+            }
+          }
+        }
+      }
+
+      &.active {
+        button {
+          transition-duration: 0.3s;
+          transform: translateY(-20px);
+          &::before {
+            transition-duration: 0.3s;
+            box-shadow: 0px 0px 5px 3px $main inset;
+            -webkit-box-shadow: 0px 0px 5px 3px $main inset;
+            -moz-box-shadow: 0px 0px 5px 3px $main inset;
+
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 
   .swiper-button-prev {
-    left: 60px;
+    left: 30px;
+    top: calc(87% - 20vw);
+
+    @include media-breakpoint-up(md) {
+      left: 60px;
+      top: 50%;
+    }
   }
   .swiper-button-next {
-    right: 60px;
+    right: 30px;
+    top: calc(87% - 20vw);
+    @include media-breakpoint-up(md) {
+      right: 60px;
+      top: 50%;
+    }
   }
   &__swiper__item {
     height: 100vh;
+    @include media-breakpoint-up(md) {
+      height: 45vw;
+    }
+    // @include media-breakpoint-up(lg) {
+    //   height: 550px;
+    // }
+    // @include media-breakpoint-up(xl) {
+    //   height: 50vw;
+    // }
+    // @include media-breakpoint-up(xxl) {
+    //   height: 50vw;
+    // }
 
     &__wrapper {
       height: 100%;
       object-fit: cover;
       background-size: cover;
+      background-position: 90%;
       display: flex;
       align-items: center;
-      padding: 0px 200px;
+      padding: 0px 30px;
+      @include media-breakpoint-up(sm) {
+        padding: 0px 15vw;
+      }
+      @include media-breakpoint-up(md) {
+        padding: 0px 15vw;
+      }
     }
 
     &__content {
+      // background: rgba(251, 251, 251, 0.25);
+      // border-radius: 20px;
+      // padding: 20px;
       &__title {
-        width: 350px;
+        width: 70%;
+        @include media-breakpoint-up(md) {
+          width: 350px;
+        }
         h2 {
           font-style: normal;
           font-weight: 900;
-          font-size: 50px;
-          line-height: 66px;
+          font-size: 6vw;
+          line-height: 10vw;
           margin: 0px;
           color: #22a8ba;
+          @include media-breakpoint-up(sm) {
+            font-size: 6vw;
+            line-height: 10vw;
+          }
+          @include media-breakpoint-up(md) {
+            font-size: 3vw;
+            line-height: 5vw;
+          }
         }
       }
       &__subtitle {
-        width: 350px;
+        width: 70%;
         margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+          width: 20vw;
+          margin-bottom: 20px;
+        }
         h3 {
           font-style: normal;
           font-weight: 600;
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 3vw;
+          line-height: 4vw;
           margin: 0;
           color: $main;
+          @include media-breakpoint-up(sm) {
+            font-size: 3vw;
+            line-height: 5vw;
+          }
+          @include media-breakpoint-up(md) {
+            font-size: 1.5vw;
+            line-height: 2vw;
+          }
         }
       }
       &__button {
@@ -96,14 +220,24 @@ $maingray: #333333;
           background-color: $main;
           font-style: normal;
           font-weight: 700;
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 12px;
+          line-height: 16px;
           border: none;
-          padding: 5px 10px;
+          padding: 10px 15px;
           border-radius: 10px;
           /* identical to box height */
 
           color: #ffffff;
+
+          @include media-breakpoint-up(sm) {
+            padding: 0.5vw 1vw;
+            font-size: 2vw;
+            line-height: 2.5vw;
+          }
+          @include media-breakpoint-up(md) {
+            font-size: 1.1vw;
+            line-height: 1.5vw;
+          }
         }
       }
     }

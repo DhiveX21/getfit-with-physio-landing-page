@@ -42,9 +42,6 @@ export default function LatestNews() {
                       has been Lorem Lorem Ipsum is simply dummy text of the
                     </p>
                   </div>
-                  <div className="latest-news__content__item__card__button">
-                    <button>See More</button>
-                  </div>
                 </div>
               </div>
               <div
@@ -68,9 +65,6 @@ export default function LatestNews() {
                       text of the printing and typesetting industry. Lorem Ipsum
                       has been Lorem Lorem Ipsum is simply dummy text of the
                     </p>
-                  </div>
-                  <div className="latest-news__content__item__card__button">
-                    <button>See More</button>
                   </div>
                 </div>
               </div>
@@ -96,9 +90,6 @@ export default function LatestNews() {
                       has been Lorem Lorem Ipsum is simply dummy text of the
                     </p>
                   </div>
-                  <div className="latest-news__content__item__card__button">
-                    <button>See More</button>
-                  </div>
                 </div>
               </div>
               <div
@@ -122,9 +113,6 @@ export default function LatestNews() {
                       text of the printing and typesetting industry. Lorem Ipsum
                       has been Lorem Lorem Ipsum is simply dummy text of the
                     </p>
-                  </div>
-                  <div className="latest-news__content__item__card__button">
-                    <button>See More</button>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,66 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.swiper-button-prev {
+  padding: 20px 20px;
+  background: #fff;
+  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5),
+    -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  @include media-breakpoint-up(md) {
+    padding: 25px 25px;
+    background: #fff;
+    box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5),
+      -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 30px 30px;
+    background: #fff;
+    box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5),
+      -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+
+  &::after {
+    font-size: 10px;
+    @include media-breakpoint-up(md) {
+      font-size: 15px;
+    }
+    @include media-breakpoint-up(xxl) {
+      font-size: 25px;
+    }
+  }
+}
+.swiper-button-next {
+  padding: 20px 20px;
+  background: #fff;
+  box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5),
+    -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  @include media-breakpoint-up(md) {
+    padding: 25px 25px;
+    background: #fff;
+    box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5),
+      -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 30px 30px;
+    background: #fff;
+    box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5),
+      -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+
+  &::after {
+    font-size: 10px;
+    @include media-breakpoint-up(md) {
+      font-size: 15px;
+    }
+    @include media-breakpoint-up(xxl) {
+      font-size: 25px;
+    }
+  }
+}
