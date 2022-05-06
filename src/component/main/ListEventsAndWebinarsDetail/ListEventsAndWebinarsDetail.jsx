@@ -59,8 +59,9 @@ export default function ListEventsAndWebinarsDetail() {
           />
         </div>
         <div className="d-flex  container extra-container">
-          {dataService.map((item) => (
+          {dataService.map((item, key) => (
             <CardFullHalfImage
+              key={key}
               cardPadding="70px"
               rowsGap="5vw"
               title={item.event_name}
