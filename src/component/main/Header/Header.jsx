@@ -42,7 +42,7 @@ export default function Header() {
                     Services
                   </h2>
                 </Link>
-                <Link to="/">
+                <Link to="/news">
                   <h2 className="header__desktop__menu__list__item">News</h2>
                 </Link>
                 <Link to="/events-and-webinars">

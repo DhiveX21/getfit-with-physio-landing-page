@@ -32,8 +32,8 @@ export default function OurServices() {
               navigation
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => {}}
+              onSwiper={(swiper) => {}}
               speed={1000}
             >
               <SwiperSlide>

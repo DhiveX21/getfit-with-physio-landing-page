@@ -13,8 +13,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .faq__title h2 {
@@ -42,7 +42,7 @@
 .faq__content {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   border-radius: 20px;
 }
@@ -50,7 +50,7 @@
 .faq__content .accordion .accordion-item {
   margin: 20px;
   -webkit-box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #bebebe;
-  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #bebebe;
+          box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #bebebe;
   border-radius: 20px;
 }
 

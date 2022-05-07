@@ -2,21 +2,21 @@
 @-webkit-keyframes slideInFromLeft {
   0% {
     -webkit-transform: translateX(-100vw);
-    transform: translateX(-100vw);
+            transform: translateX(-100vw);
   }
   100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes slideInFromLeft {
   0% {
     -webkit-transform: translateX(-100vw);
-    transform: translateX(-100vw);
+            transform: translateX(-100vw);
   }
   100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -30,9 +30,9 @@
 .our-services .extra-container {
   gap: 5vw;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=ListServiceDetail.css.map */

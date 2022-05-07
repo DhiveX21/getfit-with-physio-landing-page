@@ -1,5 +1,4 @@
-import React from "react";
-import Header from "../../component/main/Header/Header";
+import React, { useEffect } from "react";
 import Hero from "../../component/main/Hero/Hero";
 import ListArticle from "../../component/main/ListArticle/ListArticle";
 
@@ -8,9 +7,12 @@ import "bootstrap/dist/js/bootstrap.js";
 import "./ListArticlePage.css";
 
 export default function ListArticlePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "List Article | GetfitWithPhysio";
+  }, []);
   return (
     <>
-      <Header></Header>
       <Hero></Hero>
       <ListArticle></ListArticle>
     </>

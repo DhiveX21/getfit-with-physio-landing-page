@@ -1,5 +1,4 @@
-import React from "react";
-import Header from "../../component/main/Header/Header";
+import React, { useEffect } from "react";
 import Hero from "../../component/main/Hero/Hero";
 import ContactBar from "../../component/main/ContactBar/ContactBar";
 import Faq from "../../component/main/Faq/Faq";
@@ -10,9 +9,13 @@ import "bootstrap/dist/js/bootstrap.js";
 import "./ServiceDetail.css";
 
 export default function ServiceDetail() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Service Detail | GetfitWithPhysio";
+  }, []);
+
   return (
     <>
-      <Header></Header>
       <Hero></Hero>
       <ListServiceDetail></ListServiceDetail>
       <Faq></Faq>

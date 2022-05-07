@@ -55,7 +55,7 @@ export default function ListEventsAndWebinarsDetail() {
               dataService.find((item) => item.event_id === activeHighlight)
                 .image
             }
-            button={() => console.log("awkodawkod")}
+            button={() => {}}
           />
         </div>
         <div className="d-flex  container extra-container">

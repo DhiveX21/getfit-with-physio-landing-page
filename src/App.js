@@ -1,6 +1,6 @@
 import Home from "./pages/Home/Home";
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -11,6 +11,9 @@ import ServiceDetail from "./pages/ServiceDetail/ServiceDetail";
 /* The following line can be included in your src/index.js or App.js file */
 import EventsAndWebinarsDetail from "./pages/EventsAndWebinarsDetail/EventsAndWebinarsDetail";
 import ListArticlePage from "./pages/ListArticlePage/ListArticlePage";
+import Footer from "./component/main/Footer/Footer";
+import ErrorPage from "./component/main/ErrorPage/ErrorPage";
+import Header from "./component/main/Header/Header";
 import "./App.scss";
 
 function App() {
@@ -21,15 +24,19 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about_us" component={AboutUsDetail} />
-        <Route exact path="/services" component={ServiceDetail} />
-        <Route
-          exact
-          path="/events-and-webinars"
-          component={EventsAndWebinarsDetail}
-        />
-        <Route exact path="/article" component={ListArticlePage} />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about_us" component={AboutUsDetail} />
+          <Route path="/services" component={ServiceDetail} />
+          <Route
+            path="/events-and-webinars"
+            component={EventsAndWebinarsDetail}
+          />
+          <Route path="/article" component={ListArticlePage} />
+          <Route component={ErrorPage} />
+        </Switch>
+        <Footer />
       </Router>
     </div>
   );

@@ -21,7 +21,11 @@ export default function Faq() {
             </div>
             <div className="faq__content">
               <div className="accordion accordion-flush" id="accordionFaq">
-                <div className="accordion-item">
+                <div
+                  className="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
                   <h2 className="accordion-header" id="flush-headingOneFaq">
                     <button
                       className="accordion-button collapsed"
@@ -51,7 +55,11 @@ export default function Faq() {
                     </div>
                   </div>
                 </div>
-                <div className="accordion-item">
+                <div
+                  className="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                >
                   <h2 className="accordion-header" id="flush-collapse-faq-2">
                     <button
                       className="accordion-button collapsed"
@@ -81,7 +89,11 @@ export default function Faq() {
                     </div>
                   </div>
                 </div>
-                <div className="accordion-item">
+                <div
+                  className="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
                   <h2 className="accordion-header" id="flush-collapse-faq-3">
                     <button
                       className="accordion-button collapsed"

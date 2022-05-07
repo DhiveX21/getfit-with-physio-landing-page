@@ -17,22 +17,22 @@ const dataJson = [
   {
     title: "Responsibility",
     subtitle: "Physiotherapy and with their responsibility",
-    url: "/",
+    url: null,
   },
   {
     title: "Responsibility",
     subtitle: "Physiotherapy and with their responsibility",
-    url: "/",
+    url: null,
   },
   {
     title: "Responsibility",
     subtitle: "Physiotherapy and with their responsibility",
-    url: "/",
+    url: null,
   },
   {
     title: "Responsibility",
     subtitle: "Physiotherapy and with their responsibility",
-    url: "/",
+    url: null,
   },
 ];
 
@@ -97,9 +97,13 @@ export default function Hero() {
                     <div className="hero__swiper__item__content__subtitle">
                       <h3>{item.subtitle}</h3>
                     </div>
-                    <div className="hero__swiper__item__content__button">
-                      <button type="button">See More</button>
-                    </div>
+                    {item.url ? (
+                      <div className="hero__swiper__item__content__button">
+                        <button type="button">See More</button>
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
               </div>
