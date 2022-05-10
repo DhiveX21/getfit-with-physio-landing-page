@@ -190,12 +190,26 @@
   }
 }
 
+.our-talented-team__content__list__item {
+  background: none;
+  border: none;
+}
+
 .our-talented-team__content__list__item__photo picture img {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
           box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   border-radius: 10px;
   width: 15vw;
   height: 15vw;
+}
+
+.our-talented-team__content__list__item__photo picture img:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

@@ -12,37 +12,37 @@ export default function CardFullImageTitle({
 }) {
   const Button = styled.div`
     transition-duration: 0.3s;
-    transform: translateY(50px);
+    transform: translateY(40px);
     opacity: 0;
     button {
       background-color: #22a8ba;
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
-      line-height: 20px;
-      padding: 10px;
+      line-height: 14px;
+      padding: 5px 10px;
       border: none;
       border-radius: 10px;
       /* identical to box height */
 
       color: #ffffff;
       @media screen and (min-width: 576px) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 14px;
+        padding: 5px 10px;
       }
       @media screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 15px;
+        padding: 10px 15px;
       }
       @media screen and (min-width: 992px) {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 16px;
+        padding: 10px 15px;
       }
     }
   `;
   const Title = styled.div`
     transition-duration: 0.3s;
-    transform: translateY(50px);
+    transform: translateY(40px);
     h2 {
       font-style: normal;
       font-weight: 900;
@@ -58,10 +58,6 @@ export default function CardFullImageTitle({
         font-size: 18px;
         line-height: 26px;
       }
-      @media screen and (min-width: 992px) {
-        font-size: 22px;
-        line-height: 32px;
-      }
     }
   `;
   const Wrapper = styled.div`
@@ -73,7 +69,7 @@ export default function CardFullImageTitle({
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: calc((90vw / ${rowsItem}));
+    height: calc((50vw / ${rowsItem}));
     overflow: hidden;
   `;
   const Outer = styled.div`

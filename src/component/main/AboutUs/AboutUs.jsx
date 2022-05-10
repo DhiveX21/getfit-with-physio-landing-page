@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./AboutUs.css";
 
+const dataEmployee = [
+  {
+    id: "1",
+    talentName: "Dr.a",
+    description: "description",
+    photo: "/images/aboutus_physio2.jpeg",
+  },
+  {
+    id: "2",
+    talentName: "Dr.b",
+    description: "description 1",
+    photo: "/images/aboutus_physio1.jpg",
+  },
+  {
+    id: "3",
+    talentName: "Dr.c",
+    description: "description 2",
+    photo: "/images/ourtalented_3.png",
+  },
+  {
+    id: "4",
+    talentName: "Dr.d",
+    description: "description 3",
+    photo: "/images/ourtalented_4.png",
+  },
+  {
+    id: "5",
+    talentName: "Dr.e",
+    description: "description 4",
+    photo: "/images/ourtalented_5.png",
+  },
+];
+
 export default function AboutUs() {
+  const [selectedItem, setSelectedItem] = useState(dataEmployee[0].id);
   return (
     <>
       <section
@@ -27,7 +62,9 @@ export default function AboutUs() {
             >
               <picture>
                 <img
-                  src="/images/aboutus_team.jpg"
+                  src={
+                    dataEmployee.find((item) => item.id === selectedItem).photo
+                  }
                   alt="team of physiotherapy"
                 />
               </picture>
@@ -38,30 +75,17 @@ export default function AboutUs() {
               data-aos-duration="800"
             >
               <div className="about-us__content__list__wrapper">
-                <div className="about-us__content__list__item">
-                  <picture>
-                    <img
-                      src="/images/aboutus_physio1.png"
-                      alt="physiotherapist"
-                    />
-                  </picture>
-                </div>
-                <div className="about-us__content__list__item">
-                  <picture>
-                    <img
-                      src="/images/aboutus_physio2.png"
-                      alt="physiotherapist"
-                    />
-                  </picture>
-                </div>
-                <div className="about-us__content__list__item">
-                  <picture>
-                    <img
-                      src="/images/aboutus_physio3.png"
-                      alt="physiotherapist"
-                    />
-                  </picture>
-                </div>
+                {dataEmployee.map((item, index) => (
+                  <button
+                    key={index}
+                    className="about-us__content__list__item "
+                    onClick={() => setSelectedItem(item.id)}
+                  >
+                    <picture>
+                      <img src={item.photo} alt="physiotherapist" />
+                    </picture>
+                  </button>
+                ))}
               </div>
             </div>
             <div
@@ -70,19 +94,26 @@ export default function AboutUs() {
               data-aos-duration="1300"
             >
               <div className="about-us__content__detail__title">
-                <h3>Introduction</h3>
+                <h3>
+                  {" "}
+                  {
+                    dataEmployee.find((item) => item.id === selectedItem)
+                      .talentName
+                  }
+                </h3>
               </div>
               <div className="about-us__content__detail__desc">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been Lorem Ipsum is simply dummy text of the
-                  printing and typesetting industry. Lorem Ipsum has been Lorem
+                  {
+                    dataEmployee.find((item) => item.id === selectedItem)
+                      .description
+                  }
                 </p>
               </div>
               <div className="about-us__content__detail__button">
-                <button>See More</button>
+                <Link to="about_us">
+                  <button className="hover-inset-shadow">See More</button>
+                </Link>
               </div>
             </div>
           </div>

@@ -146,9 +146,17 @@ $graytext: #999999;
         gap: 50px;
       }
       &__item {
+        background: none;
+        border: none;
         &__photo {
           picture {
             img {
+              transition-duration: 0.5s;
+              &:hover {
+                transition-duration: 0.5s;
+
+                transform: scale(1.1);
+              }
               box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
               border-radius: 10px;
               width: 15vw;

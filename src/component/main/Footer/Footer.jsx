@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
@@ -44,36 +45,66 @@ export default function Footer() {
                     <h2>social</h2>
                   </div>
                   <div className="footer__desktop__content__social__wrapper">
+                    {/* <div className="footer__desktop__content__social__item">
+                      <a
+                        href="https://www.instagram.com/getfitwithphysio/"
+                        target="_blank"
+                      >
+                        <picture>
+                          <img src="/images/youtube.png" alt="youtube" />
+                        </picture>
+                      </a>
+                    </div> */}
                     <div className="footer__desktop__content__social__item">
-                      <picture>
-                        <img src="/images/youtube.png" alt="youtube" />
-                      </picture>
+                      <a
+                        href="https://www.tiktok.com/@getfitwithphysio"
+                        target="_blank"
+                      >
+                        <picture>
+                          <img src="/images/tiktok.png" alt="tiktok" />
+                        </picture>
+                      </a>
                     </div>
                     <div className="footer__desktop__content__social__item">
-                      <picture>
-                        <img src="/images/tiktok.png" alt="tiktok" />
-                      </picture>
+                      <a
+                        href="https://www.linkedin.com/company/get-fit-with-physio/"
+                        target="_blank"
+                      >
+                        <picture>
+                          <img src="/images/linkedin.png" alt="linkedin" />
+                        </picture>
+                      </a>
                     </div>
-                    <div className="footer__desktop__content__social__item">
+                    {/* <div className="footer__desktop__content__social__item">
                       <picture>
                         <img src="/images/twitter.png" alt="twitter" />
                       </picture>
+                    </div> */}
+                    <div className="footer__desktop__content__social__item">
+                      <a
+                        href="https://www.facebook.com/getfitwithphysio/"
+                        target="_blank"
+                      >
+                        <picture>
+                          <img src="/images/facebook.png" alt="facebook" />
+                        </picture>
+                      </a>
                     </div>
                     <div className="footer__desktop__content__social__item">
-                      <picture>
-                        <img src="/images/facebook.png" alt="facebook" />
-                      </picture>
+                      <a
+                        href="https://www.instagram.com/getfitwithphysio/"
+                        target="_blank"
+                      >
+                        <picture>
+                          <img src="/images/instagram.png" alt="instagram" />
+                        </picture>
+                      </a>
                     </div>
-                    <div className="footer__desktop__content__social__item">
-                      <picture>
-                        <img src="/images/instagram.png" alt="instagram" />
-                      </picture>
-                    </div>
-                    <div className="footer__desktop__content__social__item">
+                    {/* <div className="footer__desktop__content__social__item">
                       <picture>
                         <img src="/images/telegram.png" alt="telegram" />
                       </picture>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -91,7 +91,7 @@ $graytext: #999999;
         box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
       }
       @include media-breakpoint-up(lg) {
-        height: 480px;
+        height: 400px;
         box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
       }
     }
@@ -104,7 +104,7 @@ $graytext: #999999;
       flex-direction: column;
       justify-content: flex-end;
       @include media-breakpoint-up(md) {
-        padding: 50px;
+        padding: 70px;
         width: 50%;
         justify-content: center;
       }
@@ -137,7 +137,7 @@ $graytext: #999999;
           font-size: 3.5vw;
           line-height: 4.7vw;
 
-          color: $graytext;
+          color: $maingray;
           @include media-breakpoint-up(sm) {
             font-size: 2.5vw;
             line-height: 4.5vw;

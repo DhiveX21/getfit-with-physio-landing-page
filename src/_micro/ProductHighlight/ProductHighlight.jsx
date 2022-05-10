@@ -18,7 +18,7 @@ export default function ProductHighlight({
           backgroundColor: "#E0E0E0",
         }}
       >
-        <div className="">
+        <div className="" id="highlightContent">
           <div className="product-highlight__wrapper">
             <div
               className="product-highlight__title"
@@ -27,7 +27,7 @@ export default function ProductHighlight({
             >
               <h2>{mainTitle}</h2>
             </div>
-            <div id="highlightContent" className="product-highlight__content">
+            <div className="product-highlight__content">
               <div className="product-highlight__content__wrapper">
                 <div className="product-highlight__content__card">
                   <div

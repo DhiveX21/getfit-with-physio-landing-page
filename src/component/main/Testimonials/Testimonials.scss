@@ -104,6 +104,12 @@ $graytext: #999999;
       &__photo {
         picture {
           img {
+            transition-duration: 0.5s;
+            &:hover {
+              transition-duration: 0.5s;
+
+              transform: scale(1.1);
+            }
             width: 30vw;
             @include media-breakpoint-up(md) {
               width: 120px;

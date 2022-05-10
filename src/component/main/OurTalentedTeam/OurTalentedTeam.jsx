@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./OurTalentedTeam.css";
 
+const dataEmployee = [
+  {
+    id: "1",
+    talentName: "Rifa Rahmalia",
+    description: "Rifa rahmalia desc",
+    photo: "/images/ourtalented_1.png",
+  },
+  {
+    id: "2",
+    talentName: "Rifa rahmalia 1",
+    description: "Rifa rahmalia desc 1",
+    photo: "/images/ourtalented_2.png",
+  },
+  {
+    id: "3",
+    talentName: "Rifa Rahmalia 2",
+    description: "Rifa rahmalia desc 2",
+    photo: "/images/ourtalented_3.png",
+  },
+  {
+    id: "4",
+    talentName: "Rifa Rahmalia 2",
+    description: "Rifa rahmalia desc 2",
+    photo: "/images/ourtalented_4.png",
+  },
+  {
+    id: "5",
+    talentName: "Rifa Rahmalia 2",
+    description: "Rifa rahmalia desc 2",
+    photo: "/images/ourtalented_5.png",
+  },
+];
+
 export default function OurTalentedTeam() {
+  const [selectedItem, setSelectedItem] = useState(dataEmployee[0].id);
   return (
     <>
       <section
@@ -25,79 +59,48 @@ export default function OurTalentedTeam() {
                   <div className="our-talented-team__content__card__image">
                     <picture>
                       <img
-                        src="/images/ourtalented_5.png"
+                        src={
+                          dataEmployee.find((item) => item.id === selectedItem)
+                            .photo
+                        }
                         alt="selected talent team"
                       />
                     </picture>
                   </div>
                   <div className="our-talented-team__content__card__text">
                     <div className="our-talented-team__content__card__text__title">
-                      <h2>Talent Name</h2>
+                      <h2>
+                        {
+                          dataEmployee.find((item) => item.id === selectedItem)
+                            .talentName
+                        }
+                      </h2>
                     </div>
                     <div className="our-talented-team__content__card__text__desc">
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Maxime animi, modi, excepturi eligendi unde, neque
-                        omnis repudiandae non ab commodi odit nisi accusamus?
-                        Reiciendis, itaque eum laudantium quo repudiandae, sint
-                        in vero perferendis sit id consequatur, maxime quod quas
-                        corrupti eos explicabo deleniti repellendus culpa
-                        commodi quibusdam! Eos, ea esse.
+                        {
+                          dataEmployee.find((item) => item.id === selectedItem)
+                            .description
+                        }
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="our-talented-team__content__list">
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_1.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_2.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_3.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_4.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_5.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_6.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
-                  <div className="our-talented-team__content__list__item">
-                    <div className="our-talented-team__content__list__item__photo">
-                      <picture>
-                        <img src="/images/ourtalented_7.png" alt="team " />
-                      </picture>
-                    </div>
-                  </div>
+                  {dataEmployee.map((item, index) => (
+                    <button
+                      className="our-talented-team__content__list__item"
+                      key={index}
+                      onClick={() => setSelectedItem(item.id)}
+                    >
+                      <div className="our-talented-team__content__list__item__photo">
+                        <picture>
+                          <img src={item.photo} alt="team" />
+                        </picture>
+                      </div>
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>

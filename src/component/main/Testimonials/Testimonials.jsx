@@ -25,7 +25,7 @@ export default function Testimonials() {
               data-aos="fade-left"
               data-aos-duration="300"
             >
-              <h2>Our Services</h2>
+              <h2>Testimonials</h2>
             </div>
             <div data-aos="fade-left" data-aos-duration="700">
               <Swiper
@@ -62,7 +62,7 @@ export default function Testimonials() {
                           >
                             <picture>
                               <img
-                                src="/images/testimonials_1.png"
+                                src="/images/testimonials_1.jpg"
                                 alt="person"
                               />
                             </picture>
@@ -74,10 +74,12 @@ export default function Testimonials() {
                           >
                             <h3>
                               <span>&ldquo;</span>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
+                              Aku merasakan manfaat melakukan fisioterapi di
+                              getfit, Fisio Rifa sangat membantu mengajarkan
+                              stretching dan setelah selesai fisioterapi 3x aku
+                              lanjut jaga postur dan lakukan stretching di
+                              rumah, Allhamdulillah keluhan di pinggang dan kaki
+                              berangsur membaik dan sekarang merasa lebih enak.
                               <span>&rdquo;</span>
                             </h3>
                           </div>
@@ -103,7 +105,7 @@ export default function Testimonials() {
                           >
                             <picture>
                               <img
-                                src="/images/testimonials_1.png"
+                                src="/images/testimonials_3.jpg"
                                 alt="person"
                               />
                             </picture>
@@ -114,10 +116,8 @@ export default function Testimonials() {
                             data-aos-duration="1500"
                           >
                             <h3>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
+                              Treatmentnya memuaskan, Mba Rifa nya baik
+                              komunikatif Mantap.
                             </h3>
                           </div>
                         </div>
@@ -142,7 +142,7 @@ export default function Testimonials() {
                           >
                             <picture>
                               <img
-                                src="/images/testimonials_1.png"
+                                src="/images/testimonials_4.jpg"
                                 alt="person"
                               />
                             </picture>
@@ -153,10 +153,10 @@ export default function Testimonials() {
                             data-aos-duration="1500"
                           >
                             <h3>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
+                              Bermanfaat banget setelah treatment langsung
+                              kerasa perbedaannya, Fisioterapisnya jg ramah dan
+                              informatif. Jadinya kita tau aftercare yang harus
+                              dilakukan juga.
                             </h3>
                           </div>
                         </div>
@@ -181,7 +181,7 @@ export default function Testimonials() {
                           >
                             <picture>
                               <img
-                                src="/images/testimonials_1.png"
+                                src="/images/testimonials_5.jpg"
                                 alt="person"
                               />
                             </picture>
@@ -192,88 +192,8 @@ export default function Testimonials() {
                             data-aos-duration="1500"
                           >
                             <h3>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="container">
-                    <div className="testimonials__swiper__item">
-                      <div
-                        className="testimonials__swiper__item__wrapper"
-                        style={{
-                          backgroundImage: `url("/images/ourservices_slide1.png")`,
-                        }}
-                      >
-                        <div className="testimonials__swiper__item__content">
-                          <div
-                            className="testimonials__swiper__item__content__photo"
-                            data-aos="fade-left"
-                            data-aos-duration="1100"
-                          >
-                            <picture>
-                              <img
-                                src="/images/testimonials_1.png"
-                                alt="person"
-                              />
-                            </picture>
-                          </div>
-                          <div
-                            className="testimonials__swiper__item__content__desc"
-                            data-aos="fade-left"
-                            data-aos-duration="1500"
-                          >
-                            <h3>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="container">
-                    <div className="testimonials__swiper__item">
-                      <div
-                        className="testimonials__swiper__item__wrapper"
-                        style={{
-                          backgroundImage: `url("/images/ourservices_slide1.png")`,
-                        }}
-                      >
-                        <div className="testimonials__swiper__item__content">
-                          <div
-                            className="testimonials__swiper__item__content__photo"
-                            data-aos="fade-left"
-                            data-aos-duration="1100"
-                          >
-                            <picture>
-                              <img
-                                src="/images/testimonials_1.png"
-                                alt="person"
-                              />
-                            </picture>
-                          </div>
-                          <div
-                            className="testimonials__swiper__item__content__desc"
-                            data-aos="fade-left"
-                            data-aos-duration="1500"
-                          >
-                            <h3>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and Lorem Ipsum is simply dummy text of the
-                              printing and Lorem Ipsum is simply dummy text of
-                              the printing and
+                              Pelayanannya sangat baik dan Physio Rifa sangat
+                              informatif dalam memberikan informasi.
                             </h3>
                           </div>
                         </div>

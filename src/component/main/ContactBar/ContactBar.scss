@@ -117,8 +117,18 @@ $graytext: #999999;
         padding: 15px;
         width: fit-content;
         height: fit-content;
+        button {
+          background: none;
+          border: none;
+        }
         picture {
           img {
+            transition-duration: 0.5s;
+            &:hover {
+              transition-duration: 0.5s;
+
+              transform: scale(1.3);
+            }
             height: 30px;
             width: 30px;
             @include media-breakpoint-up(sm) {

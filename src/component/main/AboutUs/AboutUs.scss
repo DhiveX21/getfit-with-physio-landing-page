@@ -92,10 +92,16 @@ $graytext: #999999;
       background: #e0e0e0;
       box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff;
       border-radius: 20px;
-
+      overflow: hidden;
       picture {
         height: 100%;
         img {
+          transition-duration: 0.5s;
+          &:hover {
+            transition-duration: 0.5s;
+
+            transform: scale(1.1);
+          }
           border-radius: 20px;
           height: 80vw;
           width: 80vw;
@@ -143,8 +149,16 @@ $graytext: #999999;
         }
       }
       &__item {
+        border: none;
+        background: none;
         picture {
           img {
+            transition-duration: 0.5s;
+            &:hover {
+              transition-duration: 0.5s;
+
+              transform: scale(1.1);
+            }
             border-radius: 20px;
             height: 25vw;
             @include media-breakpoint-up(md) {

@@ -126,7 +126,7 @@
 
 @media (min-width: 992px) {
   .our-services__swiper__item__wrapper {
-    height: 480px;
+    height: 400px;
     -webkit-box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
             box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   }
@@ -150,7 +150,7 @@
 
 @media (min-width: 768px) {
   .our-services__swiper__item__content {
-    padding: 50px;
+    padding: 70px;
     width: 50%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -192,7 +192,7 @@
   font-weight: 500;
   font-size: 3.5vw;
   line-height: 4.7vw;
-  color: #999999;
+  color: #333333;
 }
 
 @media (min-width: 576px) {

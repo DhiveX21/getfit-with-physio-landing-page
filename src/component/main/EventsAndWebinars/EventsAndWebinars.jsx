@@ -23,7 +23,7 @@ export default function EventsAndWebinars() {
             <div
               className="events-and-webinars__content"
               style={{
-                backgroundImage: `url("/images/eventsandwebinars_bg.png")`,
+                backgroundImage: `url("/images/eventsandwebinars_bg1.jpg")`,
               }}
             >
               <div className="events-and-webinars__content__wrapper">
@@ -33,16 +33,18 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="600"
                   >
-                    <Link to="/">
+                    <Link to="/events-and-webinars">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
-                          <h3>Auto Immune Treatment</h3>
+                          <h3>Seminar Kesehatan Wanita</h3>
                         </div>
                         <div className="events-and-webinars__content__list__item__date">
-                          <h2>17-Feb-2021</h2>
+                          <h2>20-Feb-2022</h2>
                         </div>
                         <div className="events-and-webinars__content__list__item__desc">
-                          <p>Auto Immune Treatment</p>
+                          <p>
+                            Kesehatan Wanita dari sisi penglihatan fisioterapi
+                          </p>
                         </div>
                       </div>
                     </Link>
@@ -52,13 +54,13 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="900"
                   >
-                    <Link to="/">
+                    <Link to="/events-and-webinars">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
                           <h3>Auto Immune Treatment</h3>
                         </div>
                         <div className="events-and-webinars__content__list__item__date">
-                          <h2>17-Feb-2021</h2>
+                          <h2>17-Sep-2021</h2>
                         </div>
                         <div className="events-and-webinars__content__list__item__desc">
                           <p>Auto Immune Treatment</p>
@@ -71,16 +73,16 @@ export default function EventsAndWebinars() {
                     data-aos="fade-left"
                     data-aos-duration="1200"
                   >
-                    <Link to="/">
+                    <Link to="/events-and-webinars">
                       <div className="events-and-webinars__content__list__item__wrapper">
                         <div className="events-and-webinars__content__list__item__title">
-                          <h3>Auto Immune Treatment</h3>
+                          <h3>Posture Improvement</h3>
                         </div>
                         <div className="events-and-webinars__content__list__item__date">
-                          <h2>17-Feb-2021</h2>
+                          <h2>22-Aug-2021</h2>
                         </div>
                         <div className="events-and-webinars__content__list__item__desc">
-                          <p>Auto Immune Treatment</p>
+                          <p>Pengecekan Posture dengan segala pengaruh nya</p>
                         </div>
                       </div>
                     </Link>

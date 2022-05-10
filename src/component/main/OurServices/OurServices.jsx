@@ -6,6 +6,7 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "./OurServices.css";
+import { Link } from "react-router-dom";
 
 export default function OurServices() {
   return (
@@ -42,7 +43,7 @@ export default function OurServices() {
                     <div
                       className="our-services__swiper__item__wrapper"
                       style={{
-                        backgroundImage: `url("/images/ourservices_slide1.png")`,
+                        backgroundImage: `url("/images/servicelist_2.jpg")`,
                       }}
                     >
                       <div className="our-services__swiper__item__content">
@@ -51,7 +52,7 @@ export default function OurServices() {
                           data-aos="fade-left"
                           data-aos-duration="1100"
                         >
-                          <h2>Muscle Release</h2>
+                          <h2>Treatment Home Visit</h2>
                         </div>
                         <div
                           className="our-services__swiper__item__content__desc"
@@ -59,10 +60,7 @@ export default function OurServices() {
                           data-aos-duration="1500"
                         >
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been Lorem
-                            Ipsum is simply dummy text of the printing and
-                            typesetting
+                          Kamu hanya perlu menunggu fisio datang ke rumahmu pada waktu yang telah di sepakati.
                           </p>
                         </div>
                         <div
@@ -70,7 +68,14 @@ export default function OurServices() {
                           data-aos="fade-left"
                           data-aos-duration="1700"
                         >
-                          <button type="button">See More</button>
+                          <Link to="services">
+                            <button
+                              className="hover-inset-shadow"
+                              type="button "
+                            >
+                              See More
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -83,23 +88,27 @@ export default function OurServices() {
                     <div
                       className="our-services__swiper__item__wrapper"
                       style={{
-                        backgroundImage: `url("/images/ourservices_slide1.png")`,
+                        backgroundImage: `url("/images/servicelist_3.jpg")`,
                       }}
                     >
                       <div className="our-services__swiper__item__content">
                         <div className="our-services__swiper__item__content__title">
-                          <h2>Muscle Release</h2>
+                          <h2>On Site Clinic</h2>
                         </div>
                         <div className="our-services__swiper__item__content__desc">
                           <p>
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been Lorem
-                            Ipsum is simply dummy text of the printing and
-                            typesetting
+                          Treatment fisioterapi di klinik praktik, untuk merasakan pengalaman fisioterapi yang maksimal...
                           </p>
                         </div>
-                        <div className="our-services__swiper__item__content__button">
-                          <button type="button">See More</button>
+                        <div className="our-services__swiper__item__content__button ">
+                          <Link to="services">
+                            <button
+                              className="hover-inset-shadow"
+                              type="button "
+                            >
+                              See More
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>

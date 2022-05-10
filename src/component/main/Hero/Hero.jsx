@@ -15,28 +15,32 @@ import "./Hero.css";
 
 const dataJson = [
   {
-    title: "Responsibility",
-    subtitle: "Physiotherapy and with their responsibility",
+    title: "Klinik",
+    subtitle: "Mitra kerja sama kami.",
     url: null,
+    image: '/images/hero_1_new.jpg'
   },
   {
-    title: "Responsibility",
-    subtitle: "Physiotherapy and with their responsibility",
+    title: "Peran Fisioterapi",
+    subtitle: "Terhadap ibu hamil dengan Covid-19",
     url: null,
+    image: '/images/hero_2_new.jpg'
   },
   {
-    title: "Responsibility",
-    subtitle: "Physiotherapy and with their responsibility",
+    title: "GetfitWithPhysio",
+    subtitle: "Mengucapkan...",
     url: null,
+    image: '/images/hero_3_new.jpg'
   },
   {
-    title: "Responsibility",
-    subtitle: "Physiotherapy and with their responsibility",
+    title: "Bentuk kaki",
+    subtitle: "dari sisi penglihatan fisioterapi...",
     url: null,
+    image: '/images/hero_4_new.jpg'
   },
 ];
 
-const HandleSlide = ({ item }) => {
+const HandleSlide = ({ item,image }) => {
   const swiper = useSwiper();
   SwiperCore.use([Autoplay]);
   return (
@@ -52,7 +56,7 @@ const HandleSlide = ({ item }) => {
           }}
         >
           <picture>
-            <img src="/images/hero1.png" alt="" />
+            <img src={image} alt="" />
           </picture>
         </button>
       </div>
@@ -87,7 +91,7 @@ export default function Hero() {
                 <div
                   className="hero__swiper__item__wrapper"
                   style={{
-                    backgroundImage: `url("/images/hero1.png")`,
+                    backgroundImage: `url(${item.image})`,
                   }}
                 >
                   <div className="hero__swiper__item__content">
@@ -113,7 +117,7 @@ export default function Hero() {
             <div className="swiper-thumbnail">
               <div className="swiper-thumbnail__wrapper">
                 {dataJson.map((item, key) => (
-                  <HandleSlide key={key} item={key}></HandleSlide>
+                  <HandleSlide key={key} item={key} image={item.image}></HandleSlide>
                 ))}
               </div>
             </div>

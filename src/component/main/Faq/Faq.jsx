@@ -35,8 +35,7 @@ export default function Faq() {
                       aria-expanded="false"
                       aria-controls="flush-collapse-faq-1"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Bagaimana cara mendaftar sebagai pasien Getfit?
                     </button>
                   </h2>
                   <div
@@ -46,12 +45,8 @@ export default function Faq() {
                     data-bs-parent="#accordionFaq"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when Lorem Ipsum
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when
+                      Kamu cukup mendaftar dari website ini , atau kamu hanya
+                      perlu hubungi admin sosial media kami...
                     </div>
                   </div>
                 </div>
@@ -69,8 +64,7 @@ export default function Faq() {
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Berapa lama sih treatment fisioterapi berlangsung?
                     </button>
                   </h2>
                   <div
@@ -80,12 +74,8 @@ export default function Faq() {
                     data-bs-parent="#accordionFaq"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when Lorem Ipsum
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when
+                      Kamu perlu meluangkan waktu sekitar 30 - 60 menit untuk
+                      mengikuti 1x treatment fisioterapi.
                     </div>
                   </div>
                 </div>
@@ -103,8 +93,8 @@ export default function Faq() {
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Apa saya bisa membuat appointment treatment di hari yang
+                      sama?
                     </button>
                   </h2>
                   <div
@@ -114,12 +104,8 @@ export default function Faq() {
                     data-bs-parent="#accordionFaq"
                   >
                     <div className="accordion-body">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when Lorem Ipsum
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when
+                      Untuk saat ini pembuatan appointment kamu harus setidak
+                      nya minimal H-1 dari hari treatment.
                     </div>
                   </div>
                 </div>
