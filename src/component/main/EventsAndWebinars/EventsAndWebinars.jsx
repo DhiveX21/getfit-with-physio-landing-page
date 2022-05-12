@@ -18,7 +18,7 @@ export default function EventsAndWebinars() {
               data-aos="fade-left"
               data-aos-duration="300"
             >
-              <h2>Events And Webinars</h2>
+              <h2>Seminar dan Acara</h2>
             </div>
             <div
               className="events-and-webinars__content"

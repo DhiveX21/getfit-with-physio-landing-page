@@ -138,6 +138,7 @@
 .testimonials__swiper__item__content__photo picture img {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  border-radius: 10px;
   width: 30vw;
 }
 
@@ -173,7 +174,7 @@
 
 .testimonials__swiper__item__content__desc h3 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 25px;
   text-align: center;

@@ -105,6 +105,7 @@ $graytext: #999999;
         picture {
           img {
             transition-duration: 0.5s;
+            border-radius: 10px;
             &:hover {
               transition-duration: 0.5s;
 
@@ -128,7 +129,7 @@ $graytext: #999999;
             // font-size: 25px;
           }
           font-style: normal;
-          font-weight: 600;
+          font-weight: 400;
           font-size: 12px;
           line-height: 25px;
           text-align: center;

@@ -23,7 +23,7 @@ export default function OurServices() {
             data-aos="fade-left"
             data-aos-duration="300"
           >
-            <h2>Our Services</h2>
+            <h2>Layanan Kami</h2>
           </div>
           <div data-aos="fade-left" data-aos-duration="700">
             <Swiper
@@ -43,39 +43,45 @@ export default function OurServices() {
                     <div
                       className="our-services__swiper__item__wrapper"
                       style={{
-                        backgroundImage: `url("/images/servicelist_2.jpg")`,
+                        backgroundImage: `url("/images/homevisit.jpg")`,
                       }}
                     >
                       <div className="our-services__swiper__item__content">
-                        <div
-                          className="our-services__swiper__item__content__title"
-                          data-aos="fade-left"
-                          data-aos-duration="1100"
-                        >
-                          <h2>Treatment Home Visit</h2>
-                        </div>
-                        <div
-                          className="our-services__swiper__item__content__desc"
-                          data-aos="fade-left"
-                          data-aos-duration="1500"
-                        >
-                          <p>
-                          Kamu hanya perlu menunggu fisio datang ke rumahmu pada waktu yang telah di sepakati.
-                          </p>
-                        </div>
-                        <div
-                          className="our-services__swiper__item__content__button"
-                          data-aos="fade-left"
-                          data-aos-duration="1700"
-                        >
-                          <Link to="services">
-                            <button
-                              className="hover-inset-shadow"
-                              type="button "
+                        <div className="our-services__swiper__item__content__wrapper">
+                          <div
+                            className="our-services__swiper__item__content__title"
+                            data-aos="fade-left"
+                            data-aos-duration="1100"
+                          >
+                            <h2>Treatment Home Visit</h2>
+                          </div>
+                          <div
+                            className="our-services__swiper__item__content__desc"
+                            data-aos="fade-left"
+                            data-aos-duration="1500"
+                          >
+                            <p>
+                              Kamu hanya perlu menunggu fisio datang ke rumahmu
+                              pada waktu yang telah di sepakati.
+                            </p>
+                          </div>
+                          <div
+                            className="our-services__swiper__item__content__button"
+                            data-aos="fade-left"
+                            data-aos-duration="1700"
+                          >
+                            <a
+                              href="https://api.whatsapp.com/send?phone=628122010859"
+                              target="_blank"
                             >
-                              See More
-                            </button>
-                          </Link>
+                              <button
+                                className="hover-inset-shadow"
+                                type="button "
+                              >
+                                Lainnya
+                              </button>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -88,27 +94,78 @@ export default function OurServices() {
                     <div
                       className="our-services__swiper__item__wrapper"
                       style={{
-                        backgroundImage: `url("/images/servicelist_3.jpg")`,
+                        backgroundImage: `url("/images/servicelist_4.jpg")`,
                       }}
                     >
                       <div className="our-services__swiper__item__content">
-                        <div className="our-services__swiper__item__content__title">
-                          <h2>On Site Clinic</h2>
-                        </div>
-                        <div className="our-services__swiper__item__content__desc">
-                          <p>
-                          Treatment fisioterapi di klinik praktik, untuk merasakan pengalaman fisioterapi yang maksimal...
-                          </p>
-                        </div>
-                        <div className="our-services__swiper__item__content__button ">
-                          <Link to="services">
-                            <button
-                              className="hover-inset-shadow"
-                              type="button "
+                        <div className="our-services__swiper__item__content__wrapper">
+                          <div className="our-services__swiper__item__content__title">
+                            <h2>In Clinic</h2>
+                          </div>
+                          <div className="our-services__swiper__item__content__desc">
+                            <p>
+                              Treatment fisioterapi di klinik praktik, untuk
+                              merasakan pengalaman fisioterapi yang maksimal...
+                            </p>
+                          </div>
+                          <div className="our-services__swiper__item__content__button ">
+                            <a
+                              href="https://api.whatsapp.com/send?phone=628122010859"
+                              target="_blank"
                             >
-                              See More
-                            </button>
-                          </Link>
+                              <button
+                                className="hover-inset-shadow"
+                                type="button "
+                              >
+                                Lainnya
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="container">
+                  <div className="our-services__swiper__item">
+                    <div
+                      className="our-services__swiper__item__wrapper"
+                      style={{
+                        backgroundImage: `url("/images/telekonsultasi.jpg")`,
+                      }}
+                    >
+                      <div className="our-services__swiper__item__content">
+                        <div className="our-services__swiper__item__content__wrapper">
+                          <div className="our-services__swiper__item__content__title">
+                            <h2>TeleFisio</h2>
+                          </div>
+                          <div className="our-services__swiper__item__content__desc">
+                            <p>
+                              Pemberian pelayanan kesehatan jarak jauh oleh
+                              profesional kesehatan dengan menggunakan teknologi
+                              informasi dan komunikasi, meliputi pertukaran
+                              informasi diagnosis, pengobatan, pencegahan
+                              penyakit dan cedera, penelitian dan evaluasi, dan
+                              pendidikan berkelanjutan penyedia layanan
+                              kesehatan untuk kepentingan peningkatan kesehatan
+                              individu dan masyarakat.
+                            </p>
+                          </div>
+                          <div className="our-services__swiper__item__content__button ">
+                            <a
+                              href="https://api.whatsapp.com/send?phone=628122010859"
+                              target="_blank"
+                            >
+                              <button
+                                className="hover-inset-shadow"
+                                type="button "
+                              >
+                                Lainnya
+                              </button>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>

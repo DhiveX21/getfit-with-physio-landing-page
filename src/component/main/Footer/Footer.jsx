@@ -23,7 +23,7 @@ export default function Footer() {
               <div className="footer__desktop__content">
                 <div className="footer__desktop__content__contact">
                   <div className="footer__desktop__content__contact__title">
-                    <h2>Contact Person 1</h2>
+                    <h2>Kontak Kami</h2>
                   </div>
                   <div className="footer__desktop__content__contact__desc">
                     <p>0895619258715</p>
@@ -31,7 +31,7 @@ export default function Footer() {
                 </div>
                 <div className="footer__desktop__content__address">
                   <div className="footer__desktop__content__address__title">
-                    <h2>Address</h2>
+                    <h2>Alamat</h2>
                   </div>
                   <div className="footer__desktop__content__address__desc">
                     <p>

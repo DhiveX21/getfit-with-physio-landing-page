@@ -25,7 +25,7 @@ export default function Testimonials() {
               data-aos="fade-left"
               data-aos-duration="300"
             >
-              <h2>Testimonials</h2>
+              <h2>Testimoni</h2>
             </div>
             <div data-aos="fade-left" data-aos-duration="700">
               <Swiper

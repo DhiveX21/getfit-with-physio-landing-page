@@ -12,35 +12,36 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "./Hero.css";
+import useBreakpoint from "../../../_helper/breakpoint";
 
 const dataJson = [
   {
     title: "Klinik",
     subtitle: "Mitra kerja sama kami.",
     url: null,
-    image: '/images/hero_1_new.jpg'
+    image: "/images/hero_1_new.jpg",
   },
   {
     title: "Peran Fisioterapi",
     subtitle: "Terhadap ibu hamil dengan Covid-19",
     url: null,
-    image: '/images/hero_2_new.jpg'
+    image: "/images/hero_2_new.jpg",
   },
   {
     title: "GetfitWithPhysio",
     subtitle: "Mengucapkan...",
     url: null,
-    image: '/images/hero_3_new.jpg'
+    image: "/images/hero_3_new.jpg",
   },
   {
     title: "Bentuk kaki",
     subtitle: "dari sisi penglihatan fisioterapi...",
     url: null,
-    image: '/images/hero_4_new.jpg'
+    image: "/images/hero_4_new.jpg",
   },
 ];
 
-const HandleSlide = ({ item,image }) => {
+const HandleSlide = ({ item, image }) => {
   const swiper = useSwiper();
   SwiperCore.use([Autoplay]);
   return (
@@ -56,7 +57,7 @@ const HandleSlide = ({ item,image }) => {
           }}
         >
           <picture>
-            <img src={image} alt="" />
+            <img src={image.replace("images/", "images/desktop_")} alt="" />
           </picture>
         </button>
       </div>
@@ -66,6 +67,7 @@ const HandleSlide = ({ item,image }) => {
 export default function Hero() {
   const [trigger, settrigger] = useState(false);
   useEffect(() => {}, [trigger]);
+  const mediaScreen = useBreakpoint();
   return (
     <>
       <section className="hero">
@@ -91,7 +93,11 @@ export default function Hero() {
                 <div
                   className="hero__swiper__item__wrapper"
                   style={{
-                    backgroundImage: `url(${item.image})`,
+                    backgroundImage: `url(${
+                      mediaScreen === "xs" || mediaScreen === "sm"
+                        ? item.image.replace("images/", "images/mobile_")
+                        : item.image.replace("images/", "images/desktop_")
+                    })`,
                   }}
                 >
                   <div className="hero__swiper__item__content">
@@ -117,7 +123,11 @@ export default function Hero() {
             <div className="swiper-thumbnail">
               <div className="swiper-thumbnail__wrapper">
                 {dataJson.map((item, key) => (
-                  <HandleSlide key={key} item={key} image={item.image}></HandleSlide>
+                  <HandleSlide
+                    key={key}
+                    item={key}
+                    image={item.image}
+                  ></HandleSlide>
                 ))}
               </div>
             </div>

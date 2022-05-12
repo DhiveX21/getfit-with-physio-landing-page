@@ -5,13 +5,13 @@ const dataContact = [
   {
     id: "1",
     platform: "whatsapp",
-    value: "Whatsapp : 0895619228715",
+    value: "Whatsapp : 0812-2010-859",
     icon: "/images/contactbar_wa.png",
   },
   {
     id: "2",
     platform: "telephone",
-    value: "Telephone : 02127177954",
+    value: "Telephone : 0812-2010-859",
     icon: "/images/contactbar_phone.png",
   },
   {
@@ -23,7 +23,7 @@ const dataContact = [
   {
     id: "4",
     platform: "clinic",
-    value: "Clinic : 02122335251",
+    value: "Klinik Samasta : 0811-8035-135",
     icon: "/images/contactbar_clinic.png",
   },
 ];

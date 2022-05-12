@@ -51,7 +51,7 @@ export default function ProductHighlight({
 
                       {button ? (
                         <div className="product-highlight__content__card__text__button">
-                          <button onClick={button}>Buy Now</button>
+                          <button onClick={button}>Beli Sekarang</button>
                         </div>
                       ) : (
                         ""

@@ -22,7 +22,7 @@ export default function ErrorPage() {
             <h2>404</h2>
           </div>
           <div className="error-page__desc">
-            <p>your requested page is not found</p>
+            <p>Ups! Halaman yang kamu cari sedang dalam perbaikan...</p>
           </div>
         </div>
       </section>

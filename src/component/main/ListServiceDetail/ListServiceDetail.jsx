@@ -7,45 +7,24 @@ import "./ListServiceDetail.css";
 const dataService = [
   {
     serviceId: "1",
-    serviceName: "Penanganan Ibu Hamil",
-    desc: "Penanganan Ibu Hamil dari usia 2 sampai 9 bulan , agar Ibu dan Calon buah hati selalu terjaga kesehatan dan kebugaran nya , berfokus untuk kenyamanan ibu hamil agar hamil terasa santai dan menyenangkan. :)",
-    image: "/images/servicelist_1.jpeg",
+    serviceName: "Home Visit",
+    desc: "Kamu hanya perlu menunggu fisio datang ke rumahmu pada waktu yang telah di sepakati.",
+    image: "/images/homevisit.jpg",
+    url: "https://api.whatsapp.com/send?phone=628122010859&text=Saya%20tertarik%20untuk%20membeli%20produk%20Home%20Visit%20ini,%20Bolehkah%20saya%20meminta%20Detailnya.",
   },
   {
     serviceId: "2",
-    serviceName: "Penanganan Atlit",
-    desc: "Penanganan Atlit Kebugaran",
-    image: "/images/latestarticle_img.jpg",
+    serviceName: "Kunjungan Klinik",
+    desc: "Treatment fisioterapi di klinik praktik, untuk merasakan pengalaman fisioterapi yang maksimal...",
+    image: "/images/servicelist_4.jpg",
+    url: "https://api.whatsapp.com/send?phone=628122010859&text=Saya%20tertarik%20untuk%20membeli%20produk%20Kunjungan%20Klinik%20ini,%20Bolehkah%20saya%20meminta%20Detailnya.",
   },
   {
     serviceId: "3",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
-  },
-  {
-    serviceId: "4",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicehighlight_bg.jpg",
-  },
-  {
-    serviceId: "5",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/ourservices_slide1.png",
-  },
-  {
-    serviceId: "6",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
-  },
-  {
-    serviceId: "7",
-    serviceName: "Fisio Paket 3x Appointment",
-    desc: "PPaket Fisio dengan 3x pertemeuan",
-    image: "/images/servicelist_1.jpeg",
+    serviceName: "TeleFisio",
+    desc: "Pemberian pelayanan kesehatan jarak jauh oleh profesional kesehatan dengan menggunakan teknologi informasi dan komunikasi, meliputi pertukaran informasi diagnosis, pengobatan, pencegahan penyakit dan cedera, penelitian dan evaluasi, dan pendidikan berkelanjutan penyedia layanan kesehatan untuk kepentingan peningkatan kesehatan individu dan masyarakat.",
+    image: "/images/telekonsultasi.jpg",
+    url: "https://api.whatsapp.com/send?phone=628122010859&text=Saya%20tertarik%20untuk%20membeli%20produk%20Tele%20Fisio%20ini,%20Bolehkah%20saya%20meminta%20Detailnya.",
   },
 ];
 
@@ -77,6 +56,13 @@ export default function ListServiceDetail() {
               dataService.find((item) => item.serviceId === activeHighlight)
                 .image
             }
+            button={() => {
+              window.open(
+                dataService.find((item) => item.serviceId === activeHighlight)
+                  .url,
+                "_blank"
+              );
+            }}
           />
         </div>
         <div className="d-flex  container extra-container">

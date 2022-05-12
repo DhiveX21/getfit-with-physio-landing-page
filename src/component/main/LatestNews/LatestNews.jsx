@@ -17,7 +17,7 @@ export default function LatestNews() {
               data-aos="fade-left"
               data-aos-duration="300"
             >
-              <h2>Latest News</h2>
+              <h2>Berita Terbaru Kami</h2>
             </div>
             <div className="latest-news__content">
               <div

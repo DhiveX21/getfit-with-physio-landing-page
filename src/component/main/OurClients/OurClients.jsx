@@ -19,7 +19,7 @@ export default function OurClients() {
               data-aos="fade-right"
               data-aos-duration="300"
             >
-              <h2>Our Clients</h2>
+              <h2>Kolaborasi terakhir kami...</h2>
             </div>
             <div className="our-clients__content">
               <div className="our-clients__content__wrapper">
@@ -34,7 +34,7 @@ export default function OurClients() {
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
-                              <img src="images/ourclients_1.png" alt="" />
+                              <img src="images/homecare24.png" alt="" />
                             </picture>
                           </div>
                         </div>
@@ -49,7 +49,7 @@ export default function OurClients() {
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
-                              <img src="images/ourclients_2.png" alt="" />
+                              <img src="images/bmw.png" alt="" />
                             </picture>
                           </div>
                         </div>
@@ -64,7 +64,7 @@ export default function OurClients() {
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
-                              <img src="images/ourclients_3.png" alt="" />
+                              <img src="images/kalcare.png" alt="" />
                             </picture>
                           </div>
                         </div>
@@ -79,7 +79,7 @@ export default function OurClients() {
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
-                              <img src="images/ourclients_4.png" alt="" />
+                              <img src="images/primecare.png" alt="" />
                             </picture>
                           </div>
                         </div>
@@ -94,7 +94,7 @@ export default function OurClients() {
                         <div className="our-clients__content__list__item__wrapper">
                           <div className="our-clients__content__list__item__icon">
                             <picture>
-                              <img src="images/ourclients_5.png" alt="" />
+                              <img src="images/samasta.png" alt="" />
                             </picture>
                           </div>
                         </div>

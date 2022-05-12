@@ -5,32 +5,35 @@ import "./AboutUs.css";
 const dataEmployee = [
   {
     id: "1",
-    talentName: "Dr.a",
-    description: "description",
+    talentName: "Faizah Abdullah, S.St.Ft., S.Ft., M.Biomed.",
+    description:
+      "Lecturer at University of Indonesia, Musculoskeletal Physiotherapy Womens Health Practitioner and Kemendikbudristek Lecturer Retooling Melbourne-Australia 2019",
     photo: "/images/aboutus_physio2.jpeg",
   },
   {
     id: "2",
-    talentName: "Dr.b",
-    description: "description 1",
+    talentName: "Rifa Rahmalia, A.Md.Ft",
+    description: "Physiotherapy Assistant Lecturer at University of Indonesia",
     photo: "/images/aboutus_physio1.jpg",
   },
   {
     id: "3",
-    talentName: "Dr.c",
-    description: "description 2",
-    photo: "/images/ourtalented_3.png",
+    talentName: "Chairunnisa, S.Pd",
+    description:
+      "Most outstanding student of UPI 2019, Participant with Excellent Accomplishment in SEA-TEACHER PHILIPPINES 2019",
+    photo: "/images/aboutus_physio3.jpg",
   },
   {
     id: "4",
-    talentName: "Dr.d",
-    description: "description 3",
-    photo: "/images/ourtalented_4.png",
+    talentName: "Amalia SV, A.Md.Ft",
+    description:
+      "2nd best 2020 graduate And Physiotherapy from University of Indonesia",
+    photo: "/images/aboutus_physio4.jpg",
   },
   {
     id: "5",
-    talentName: "Dr.e",
-    description: "description 4",
+    talentName: "Rossa Nurhanifah, A.Md.Ft",
+    description: "Social Media Specialist at Get Fit with Physio",
     photo: "/images/ourtalented_5.png",
   },
 ];
@@ -52,7 +55,7 @@ export default function AboutUs() {
             data-aos="fade-left"
             data-aos-duration="300"
           >
-            <h2>About Us</h2>
+            <h2>Tentang kami</h2>
           </div>
           <div className="about-us__content">
             <div
@@ -112,7 +115,7 @@ export default function AboutUs() {
               </div>
               <div className="about-us__content__detail__button">
                 <Link to="about_us">
-                  <button className="hover-inset-shadow">See More</button>
+                  <button className="hover-inset-shadow">Lainnya</button>
                 </Link>
               </div>
             </div>

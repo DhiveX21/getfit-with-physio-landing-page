@@ -50,7 +50,7 @@ export default function WhyGetfit() {
               data-aos="fade-left"
               data-aos-duration="300"
             >
-              <h2>Why Getfit ?</h2>
+              <h2>Kenapa harus Getfit?</h2>
             </div>
             <div className="why-getfit__content">
               <div className="why-getfit__content__wrapper">

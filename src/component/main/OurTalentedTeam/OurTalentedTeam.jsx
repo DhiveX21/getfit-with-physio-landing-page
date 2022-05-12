@@ -4,32 +4,35 @@ import "./OurTalentedTeam.css";
 const dataEmployee = [
   {
     id: "1",
-    talentName: "Rifa Rahmalia",
-    description: "Rifa rahmalia desc",
-    photo: "/images/ourtalented_1.png",
+    talentName: "Faizah Abdullah, S.St.Ft., S.Ft., M.Biomed.",
+    description:
+      "Lecturer at University of Indonesia, Musculoskeletal Physiotherapy Womens Health Practitioner and Kemendikbudristek Lecturer Retooling Melbourne-Australia 2019",
+    photo: "/images/aboutus_physio2.jpeg",
   },
   {
     id: "2",
-    talentName: "Rifa rahmalia 1",
-    description: "Rifa rahmalia desc 1",
-    photo: "/images/ourtalented_2.png",
+    talentName: "Rifa Rahmalia, A.Md.Ft",
+    description: "Physiotherapy Assistant Lecturer at University of Indonesia",
+    photo: "/images/aboutus_physio1.jpg",
   },
   {
     id: "3",
-    talentName: "Rifa Rahmalia 2",
-    description: "Rifa rahmalia desc 2",
-    photo: "/images/ourtalented_3.png",
+    talentName: "Chairunnisa, S.Pd",
+    description:
+      "Most outstanding student of UPI 2019, Participant with Excellent Accomplishment in SEA-TEACHER PHILIPPINES 2019",
+    photo: "/images/aboutus_physio3.jpg",
   },
   {
     id: "4",
-    talentName: "Rifa Rahmalia 2",
-    description: "Rifa rahmalia desc 2",
-    photo: "/images/ourtalented_4.png",
+    talentName: "Amalia SV, A.Md.Ft",
+    description:
+      "2nd best 2020 graduate And Physiotherapy from University of Indonesia",
+    photo: "/images/aboutus_physio4.jpg",
   },
   {
     id: "5",
-    talentName: "Rifa Rahmalia 2",
-    description: "Rifa rahmalia desc 2",
+    talentName: "Rossa Nurhanifah, A.Md.Ft",
+    description: "Social Media Specialist at Get Fit with Physio",
     photo: "/images/ourtalented_5.png",
   },
 ];

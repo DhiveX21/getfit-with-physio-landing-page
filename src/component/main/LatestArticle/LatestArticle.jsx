@@ -18,7 +18,7 @@ export default function LatestArticle() {
             data-aos="fade-right"
             data-aos-duration="300"
           >
-            <h2>Latest Article</h2>
+            <h2>Article Terbaru</h2>
           </div>
 
           <div
@@ -89,7 +89,7 @@ export default function LatestArticle() {
                       </div>
                     </div>
                     <div className="latest-article__content__detail__attribute__comment">
-                      <p>24 Comments</p>
+                      <p>24 Komentar</p>
                     </div>
                   </div>
                 </div>

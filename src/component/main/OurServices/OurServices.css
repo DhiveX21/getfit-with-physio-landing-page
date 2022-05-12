@@ -135,7 +135,6 @@
 .our-services__swiper__item__content {
   height: 100%;
   width: 100%;
-  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +155,12 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.our-services__swiper__item__content__wrapper {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  border-radius: 20px;
 }
 
 .our-services__swiper__item__content__title h2 {
