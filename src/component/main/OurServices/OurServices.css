@@ -159,8 +159,20 @@
 
 .our-services__swiper__item__content__wrapper {
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
+}
+
+@media (min-width: 576px) {
+  .our-services__swiper__item__content__wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-services__swiper__item__content__wrapper {
+    padding: 30px;
+  }
 }
 
 .our-services__swiper__item__content__title h2 {
@@ -195,22 +207,22 @@
 .our-services__swiper__item__content__desc p {
   font-style: normal;
   font-weight: 500;
-  font-size: 3.5vw;
-  line-height: 4.7vw;
+  font-size: 12px;
+  line-height: 14px;
   color: #333333;
 }
 
 @media (min-width: 576px) {
   .our-services__swiper__item__content__desc p {
-    font-size: 2.5vw;
-    line-height: 4.5vw;
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: 768px) {
   .our-services__swiper__item__content__desc p {
-    font-size: 1.5vw;
-    line-height: 2.1vw;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

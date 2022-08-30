@@ -70,7 +70,7 @@
 }
 
 .product-highlight__content {
-  background: #e2e2e2;
+  background: #fff;
   -webkit-box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bebebe;
           box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #bebebe;
   border-radius: 20px;
@@ -82,7 +82,7 @@
 }
 
 .product-highlight__content__card__wrapper {
-  padding: 20px;
+  padding: 50px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,9 +90,9 @@
   background-repeat: no-repeat;
   min-height: 300px;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (min-width: 576px) {
@@ -120,11 +120,26 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 5vw;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
   .product-highlight__content__card__text {
-    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.product-highlight__content__card__text__wrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product-highlight__content__card__text__wrapper {
+    width: 70%;
   }
 }
 
@@ -152,7 +167,7 @@
 
 .product-highlight__content__card__text__desc p {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   color: #333333;
@@ -179,30 +194,48 @@
   }
 }
 
+.product-highlight__content__card__text__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product-highlight__content__card__text__button {
+    width: 30%;
+  }
+}
+
 .product-highlight__content__card__text__button button {
-  background-color: #22a8ba;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 200px;
+  width: 100%;
+  border: 2px #22a8ba solid;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 32px;
   line-height: 16px;
-  border: none;
   padding: 10px 15px;
   border-radius: 10px;
   /* identical to box height */
-  color: #ffffff;
+  color: #22a8ba;
+}
+
+.product-highlight__content__card__text__button button:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #22a8ba;
+  color: white;
 }
 
 @media (min-width: 576px) {
   .product-highlight__content__card__text__button button {
     padding: 0.5vw 1vw;
-    font-size: 2vw;
     line-height: 2.5vw;
   }
 }
 
 @media (min-width: 768px) {
   .product-highlight__content__card__text__button button {
-    font-size: 1.1vw;
     line-height: 1.5vw;
   }
 }

@@ -14,6 +14,7 @@ import ListArticlePage from "./pages/ListArticlePage/ListArticlePage";
 import Footer from "./component/main/Footer/Footer";
 import ErrorPage from "./component/main/ErrorPage/ErrorPage";
 import Header from "./component/main/Header/Header";
+import CustomForm from "./component/main/CustomForm/CustomForm";
 import "./App.scss";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             component={EventsAndWebinarsDetail}
           />
           <Route path="/article" component={ListArticlePage} />
+          <Route path="/atendee-form" component={CustomForm} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer />

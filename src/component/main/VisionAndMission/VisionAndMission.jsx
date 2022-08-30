@@ -24,14 +24,12 @@ export default function OurClients() {
               <div className="vision-and-mission__content__wrapper">
                 <div className="vision-and-mission__content__text">
                   <div className="vision-and-mission__content__text__title">
-                    <h3>Vision</h3>
+                    <h3>Visi</h3>
                   </div>
                   <div className="vision-and-mission__content__text__desc">
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
+                      "Meningkatkan derajat kesehatan dan kualitas hidup
+                      masyarakat melalui pelayanan yang prima"
                     </p>
                   </div>
                   {/* <div className="vision-and-mission__content__text__icon">
@@ -85,14 +83,14 @@ export default function OurClients() {
                 </div>
                 <div className="vision-and-mission__content__text">
                   <div className="vision-and-mission__content__text__title">
-                    <h3>Vision</h3>
+                    <h3>Misi</h3>
                   </div>
                   <div className="vision-and-mission__content__text__desc">
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took
+                      "Memberikan pelayanan fisioterapi yang berkualitas sesuai
+                      dengan kemajuan ilmu pengetahuan dan teknologi melalui SDM
+                      yang profesional, ramah, berdedikasi tinggi dan
+                      berlandaskan etika profesi"
                     </p>
                   </div>
                   {/* <div className="vision-and-mission__content__text__icon">

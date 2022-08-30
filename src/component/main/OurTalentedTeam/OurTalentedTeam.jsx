@@ -33,7 +33,7 @@ const dataEmployee = [
     id: "5",
     talentName: "Rossa Nurhanifah, A.Md.Ft",
     description: "Social Media Specialist at Get Fit with Physio",
-    photo: "/images/ourtalented_5.png",
+    photo: "/images/aboutus_physio5.jpeg",
   },
 ];
 
