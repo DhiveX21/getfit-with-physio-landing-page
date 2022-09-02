@@ -57,7 +57,7 @@
   padding: 20px;
   width: 50%;
   min-width: 300px;
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.534);
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -89,7 +89,8 @@
   text-align: center;
 }
 
-.custom-form__card__form__wrapper {
+.custom-form__card__form__wrapper,
+.custom-form__card__form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,9 +118,15 @@
   line-height: 24px;
   color: white;
   text-shadow: #4d4d4d 1px 1px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 
-.custom-form__card__form__group input[type="text"] {
+.custom-form__card__form__group input[type="text"],
+.custom-form__card__form__group input[type="date"] {
+  padding: 10px;
   border: none;
   min-height: 50px;
   border-radius: 5px;
@@ -163,5 +170,26 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.custom-form__card__form__group textarea {
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-form__card__form__group .hint {
+  color: white;
+  text-shadow: #7e7e7e 1px 1px 1px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.custom-form__card__form__group .error-hint {
+  color: #ff7c7c;
+  text-shadow: #000000 1px 1px 1px;
+  margin: 0;
 }
 /*# sourceMappingURL=CustomForm.css.map */

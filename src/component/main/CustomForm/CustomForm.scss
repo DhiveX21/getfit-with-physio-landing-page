@@ -44,7 +44,7 @@ $graytext: #999999;
     width: 50%;
     min-width: 300px;
 
-    background: rgba(0, 0, 0, 0.22);
+    background: rgba(0, 0, 0, 0.534);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.1px);
@@ -69,7 +69,8 @@ $graytext: #999999;
     }
 
     &__form {
-      &__wrapper {
+      &__wrapper,
+      form {
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -86,8 +87,12 @@ $graytext: #999999;
           line-height: 24px;
           color: rgb(255, 255, 255);
           text-shadow: #4d4d4d 1px 1px 1px;
+          display: flex;
+          gap: 10px;
         }
-        input[type="text"] {
+        input[type="text"],
+        input[type="date"] {
+          padding: 10px;
           border: none;
           min-height: 50px;
           border-radius: 5px;
@@ -122,6 +127,28 @@ $graytext: #999999;
             font-size: 20px;
             line-height: 30px;
           }
+        }
+
+        textarea {
+          min-height: 100px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+
+        .hint {
+          color: rgb(255, 255, 255);
+          text-shadow: #7e7e7e 1px 1px 1px;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 12px;
+
+          margin-top: 2px;
+        }
+
+        .error-hint {
+          color: rgb(255, 124, 124);
+          text-shadow: #000000 1px 1px 1px;
+          margin: 0;
         }
       }
     }
