@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Varela+Round&display=swap");
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.swiper-button-prev {
+  padding: 20px 20px;
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+          box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev {
+    padding: 25px 25px;
+    background: #fff;
+    -webkit-box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+            box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-prev {
+    padding: 30px 30px;
+    background: #fff;
+    -webkit-box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+            box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+}
+
+.swiper-button-prev::after {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev::after {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-prev::after {
+    font-size: 25px;
+  }
+}
+
+.swiper-button-next {
+  padding: 20px 20px;
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+          box-shadow: 10px 10px 30px rgba(190, 190, 190, 0.5), -10px -10px 30px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next {
+    padding: 25px 25px;
+    background: #fff;
+    -webkit-box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+            box-shadow: 15px 15px 45px rgba(190, 190, 190, 0.5), -15px -15px 45px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-next {
+    padding: 30px 30px;
+    background: #fff;
+    -webkit-box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+            box-shadow: 20px 20px 60px rgba(190, 190, 190, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+}
+
+.swiper-button-next::after {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next::after {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-next::after {
+    font-size: 25px;
+  }
+}
+
+.hover-inset-shadow {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.hover-inset-shadow:hover {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  box-shadow: 0px -200px 200px 50px rgba(255, 255, 255, 0.3) inset;
+  -webkit-box-shadow: 0px -200px 200px 50px rgba(255, 255, 255, 0.3) inset;
+  -moz-box-shadow: 0px -200px 200px 50px rgba(255, 255, 255, 0.3) inset;
+}
+/*# sourceMappingURL=App.css.map */

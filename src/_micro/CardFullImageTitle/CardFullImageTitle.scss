@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+$main: #22a8ba;
+$deep: #1b5c79;
+$dark: #1e2434;
+$maingray: #333333;
+$graytext: #999999;
+.card-full-image-title {
+  border-radius: 20px;
+  &__wrapper {
+    background-size: cover;
+    min-height: 200px;
+  }
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.custom-form {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 90%;
+}
+
+@media (min-width: 768px) {
+  .custom-form {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.custom-form__card {
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  min-width: 300px;
+  background: rgba(0, 0, 0, 0.534);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-form__card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.custom-form__card__title {
+  margin-bottom: 20px;
+}
+
+.custom-form__card__title h3 {
+  font-size: 24px;
+  color: white;
+  text-shadow: #4d4d4d 1px 1px 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.custom-form__card__form__wrapper,
+.custom-form__card__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.custom-form__card__form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.custom-form__card__form__group label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: white;
+  text-shadow: #4d4d4d 1px 1px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.custom-form__card__form__group input[type="text"],
+.custom-form__card__form__group input[type="date"] {
+  padding: 10px;
+  border: none;
+  min-height: 50px;
+  border-radius: 5px;
+}
+
+.custom-form__card__form__group .radio-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.custom-form__card__form__group .radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.custom-form__card__form__group button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #22a8ba;
+  color: white;
+  border-radius: 10px;
+  min-width: 50px;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .custom-form__card__form__group button {
+    min-width: 100px;
+    width: 30%;
+    padding: 10px 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.custom-form__card__form__group textarea {
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-form__card__form__group .hint {
+  color: white;
+  text-shadow: #7e7e7e 1px 1px 1px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.custom-form__card__form__group .error-hint {
+  color: #ff7c7c;
+  text-shadow: #000000 1px 1px 1px;
+  margin: 0;
+}
+/*# sourceMappingURL=CustomForm.css.map */

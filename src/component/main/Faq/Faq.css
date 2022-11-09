@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+.faq {
+  width: 100%;
+  padding: 50px 0px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.faq__title {
+  margin-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.faq__title h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 22px;
+  color: #22a8ba;
+}
+
+@media (min-width: 576px) {
+  .faq__title h2 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq__title h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.faq__content {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.faq__content .accordion .accordion-item {
+  margin: 20px;
+  -webkit-box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bebebe;
+          box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bebebe;
+  border-radius: 20px;
+}
+
+.faq__content .accordion .accordion-item .accordion-header .accordion-button {
+  border: solid 3px white;
+  border-radius: 20px;
+  background-color: #22a8ba;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .faq__content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq__content .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.faq__content .accordion .accordion-item .accordion-body {
+  border-radius: 0px 0px 20px 20px;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: 576px) {
+  .faq__content .accordion .accordion-item .accordion-body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq__content .accordion .accordion-item .accordion-body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=Faq.css.map */

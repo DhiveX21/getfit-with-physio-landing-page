@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+@import "../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+$main: #22a8ba;
+$deep: #1b5c79;
+$dark: #1e2434;
+$maingray: #333333;
+$graytext: #999999;
+
+.custom-form {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 35% 90%;
+
+  @include media-breakpoint-up(md) {
+    background-position: 0% 50%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    background: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    min-width: 300px;
+
+    background: rgba(0, 0, 0, 0.534);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      h3 {
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        text-shadow: #4d4d4d 1px 1px 1px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+
+    &__form {
+      &__wrapper,
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 24px;
+          color: rgb(255, 255, 255);
+          text-shadow: #4d4d4d 1px 1px 1px;
+          display: flex;
+          gap: 10px;
+        }
+        input[type="text"],
+        input[type="date"] {
+          padding: 10px;
+          border: none;
+          min-height: 50px;
+          border-radius: 5px;
+        }
+
+        .radio-wrapper {
+          display: flex;
+          gap: 30px;
+        }
+        .radio-group {
+          display: flex;
+          gap: 10px;
+        }
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          background-color: $main;
+          color: white;
+          border-radius: 10px;
+          min-width: 50px;
+          width: 50%;
+          align-self: center;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 20px;
+
+          @include media-breakpoint-up(md) {
+            min-width: 100px;
+            width: 30%;
+            padding: 10px 30px;
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+
+        textarea {
+          min-height: 100px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+
+        .hint {
+          color: rgb(255, 255, 255);
+          text-shadow: #7e7e7e 1px 1px 1px;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 12px;
+
+          margin-top: 2px;
+        }
+
+        .error-hint {
+          color: rgb(255, 124, 124);
+          text-shadow: #000000 1px 1px 1px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
