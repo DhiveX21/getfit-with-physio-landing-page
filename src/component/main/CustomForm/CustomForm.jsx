@@ -24,7 +24,7 @@ export default function CustomForm() {
       complaint: data.healthComplaint,
     };
     axios
-      .post("https://api.getfitwithphysio.com/user-service/api/users/register", {
+      .post("https://api.getfitwithphysio.com/user-service/api/users/register-old", {
         ...body,
       })
       .then((response) => {
