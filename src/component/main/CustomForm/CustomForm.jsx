@@ -24,7 +24,7 @@ export default function CustomForm() {
       complaint: data.healthComplaint,
     };
     axios
-      .post("http://103.174.114.48:8002/user-service/api/users/register", {
+      .post("https://api.getfitwithphysio.com/user-service/api/users/register", {
         ...body,
       })
       .then((response) => {
